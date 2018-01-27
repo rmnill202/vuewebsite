@@ -1,0 +1,70 @@
+{
+  "welcomePage": {
+    "websiteName": "Robert Nill",
+    "description": "My website!",
+    "recentEvents": [
+      {"description": "B.S. in Software Engineering at RIT", "dateText": "est. May '19"},
+      {"description": "Co-op", "dateText": "Jan - Jun '18"},
+      {"description": "Co-op", "dateText": "Jan - Aug '17"}
+    ],
+    "previewImages": {
+      "left": [],
+      "right": []
+    }
+  },
+  "projects": [
+    {
+      "preview": {
+        "name": "Healthnet",
+        "description": "It's healthnet!",
+        "startDate": "",
+        "endDate": "",
+        "images": [
+          {"name": "Image", "img": "/"}
+        ]
+      }
+	  }
+  ],
+  "about": [
+    {
+      "name": "Software",
+      "description": "Software engineering is cool!",
+      "image": {
+        "name": "An image!",
+        "img": "/"
+        },
+      "bulletPoints": [
+        {"text": "A bullet point!"}
+      ]
+	  }
+  ],
+  "skillsets": [
+    { "name": "Title", "description": "Description",
+      "image": {
+        "name": "An image!",
+        "img": "/"
+      }
+    }
+  ],
+  "contactInfo": {
+    "emails": [
+      { "address": "rmn6979@rit.edu", "info": "School e-mail address" },
+      { "address": "rmnill202mail@gmail.com", "info": "Personal e-mail address" }
+	  ],
+    "socialMedia": [
+      { "websiteName": "GitHub", "link": "https://github.com/rmnill202/" }
+    ]
+  },
+  "headerLinks": {
+    "left": [
+      { "address": "", "text": "",
+        "icon": { "name": "", "icon": ""}
+      }
+    ],
+    "right": [
+      { "address": "", "text": "",
+        "icon": { "name": "", "icon": ""}
+      }
+    ]
+  }
+}
