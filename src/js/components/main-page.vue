@@ -1,28 +1,40 @@
 <template>
   <div>
-    <h2>Header</h2>
-    <h1>Welcome</h1>
-    <h1>Projects</h1>
-    <h1>About</h1>
-    <h1>Skillsets</h1>
-    <h1>Contact</h1>
+    <welcome :welcomePage="websiteData.welcomePage"></welcome>
+    <projects :projects="websiteData.projects"></projects>
+    <about :about="websiteData.about"></about>
+    <skillsets :skillsets="websiteData.skillsets"></skillsets>
+    <contact :contact="websiteData.contactInfo"></contact>
   </div>
 </template>
 
 
 <script>
-  import WebsiteData from '../../assets/website-data.json'
+  import websiteData from '../../assets/website-data.json';
+  import Welcome from './welcome';
+  import Projects from './projects';
+  import About from './about';
+  import Skillsets from './skillsets';
+  import Contact from './contact';
 
   export default {
     name: "main-page",
     data() {
       return {
-
+        websiteData: websiteData,
+        headerLinks : websiteData.headerLinks
       };
     },
     mounted() {
       console.log("Hello world!");
-      console.log(WebsiteData);
+      console.log(this.websiteData);
+    },
+    components: {
+      Welcome,
+      Projects,
+      About,
+      Skillsets,
+      Contact
     }
   }
 
