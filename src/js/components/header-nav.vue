@@ -1,13 +1,13 @@
 <template>
   <div>
-    <h1>Welcome</h1>
+    <v-toolbar fixed color="blue" light dense></v-toolbar>
   </div>
 </template>
 
 <script>
   export default {
-    name: 'welcome',
-    props: ['welcomePage'],
+    name: 'header-nav',
+    props: ['headerLinks'],
     data() {
       return {
 

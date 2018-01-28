@@ -1,5 +1,6 @@
 <template>
   <div>
+    <header-nav :headerLinks="websiteData.headerLinks"></header-nav>
     <welcome :welcomePage="websiteData.welcomePage"></welcome>
     <projects :projects="websiteData.projects"></projects>
     <about :about="websiteData.about"></about>
@@ -11,6 +12,7 @@
 
 <script>
   import websiteData from '../../assets/website-data.json';
+  import HeaderNav from './header-nav';
   import Welcome from './welcome';
   import Projects from './projects';
   import About from './about';
@@ -21,8 +23,7 @@
     name: "main-page",
     data() {
       return {
-        websiteData: websiteData,
-        headerLinks : websiteData.headerLinks
+        websiteData: websiteData
       };
     },
     mounted() {
@@ -30,6 +31,7 @@
       console.log(this.websiteData);
     },
     components: {
+      HeaderNav,
       Welcome,
       Projects,
       About,
