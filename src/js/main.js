@@ -9,7 +9,6 @@ Vue.config.productionTip = false;
 
 Vue.use(Vuetify);
 import 'vuetify/dist/vuetify.min.css';
-import 'vuetify/dist/vuetify.min.js';
 
 /* eslint-disable no-new */
 new Vue({

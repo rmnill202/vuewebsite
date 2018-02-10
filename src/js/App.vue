@@ -1,6 +1,15 @@
 <template>
   <div id="app">
-    <router-view></router-view>
+    <head> <!-- Include material icons -->
+      <link
+        href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons'
+            rel="stylesheet">
+    </head>
+    <body>
+      <v-app> <!-- Required for Vuetify to work correctly -->
+        <router-view></router-view>
+      </v-app>
+    </body>
   </div>
 </template>
 
