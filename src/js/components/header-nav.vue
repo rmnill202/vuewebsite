@@ -2,7 +2,7 @@
   <div>
     <v-toolbar flat dense>
       <!-- Icons on the left side of the toolbar -->
-      <v-btn icon v-for="link in leftLinks" :href="link.address" class="hidden-xs-only">
+      <v-btn icon v-for="link in leftLinks" :href="link.address" target="_blank" class="hidden-xs-only">
         <v-icon>{{link.icon.icon}}</v-icon>
       </v-btn>
 
@@ -25,7 +25,7 @@
           </v-list-tile>
           <!-- Links from the left side of the toolbar -->
           <v-divider class="hidden-sm-and-up"></v-divider>
-          <v-list-tile @click="" v-for="link in leftLinks" :href="link.address" class="hidden-sm-and-up">
+          <v-list-tile @click="" v-for="link in leftLinks" :href="link.address" target="_blank" class="hidden-sm-and-up">
             <v-list-tile-title> {{link.text}} </v-list-tile-title>
           </v-list-tile>
         </v-list>
