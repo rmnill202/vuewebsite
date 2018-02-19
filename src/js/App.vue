@@ -1,9 +1,10 @@
 <template>
   <div id="app">
-    <head> <!-- Include material icons -->
-      <link
-        href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons'
-            rel="stylesheet">
+    <head>
+      <!-- Include Material icons -->
+      <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet">
+      <!-- Include Font Awesome icons -->
+      <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     </head>
     <body>
       <v-app> <!-- Required for Vuetify to work correctly -->
@@ -26,6 +27,5 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>

@@ -57,12 +57,27 @@
   },
   "headerLinks": {
     "left": [
-      { "address": "", "text": "",
-        "icon": { "name": "", "icon": ""}
+      { "address": "", "text": "LinkedIn",
+        "icon": { "name": "", "icon": "fab fa-linkedin"}
+      },
+      { "address": "", "text": "GitHub",
+        "icon": { "name": "", "icon": "fab fa-github-square"}
       }
     ],
     "right": [
-      { "address": "", "text": "",
+      { "address": "", "text": "Projects",
+        "icon": { "name": "", "icon": ""}
+      },
+      { "address": "", "text": "About",
+        "icon": { "name": "", "icon": ""}
+      },
+      { "address": "", "text": "Skillsets",
+        "icon": { "name": "", "icon": ""}
+      },
+      { "address": "", "text": "Contact",
+        "icon": { "name": "", "icon": ""}
+      },
+      { "address": "", "text": "Blog",
         "icon": { "name": "", "icon": ""}
       }
     ]
