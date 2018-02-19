@@ -9,7 +9,6 @@
     "build": "cross-env NODE_ENV=production NODE_APP_MODE=app webpack --progress --hide-modules"
   },
   "dependencies": {
-    "v-media-query": "^1.0.3",
     "vue": "^2.4.2",
     "vue-router": "^2.7.0",
     "vuetify": "^1.0.1"
