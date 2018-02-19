@@ -2,7 +2,7 @@
   <div>
     <v-toolbar flat dense>
       <!-- Icons on the left side of the toolbar -->
-      <v-btn icon v-for="link in leftLinks" :href="link.address">
+      <v-btn icon v-for="link in leftLinks" :href="link.address" class="hidden-xs-only">
         <v-icon>{{link.icon.icon}}</v-icon>
       </v-btn>
 
@@ -14,12 +14,18 @@
       </v-toolbar-items>
 
       <!-- For smaller screens, display a menu -->
-      <v-menu transition="slide-x-transition" class="hidden-md-and-up">
+      <v-menu transition="slide-x-transition" class="hidden-md-and-up" left>
         <!-- Hamburger menu icon! -->
         <v-btn icon slot="activator"> <v-icon>menu</v-icon> </v-btn>
         <!-- The menu contents -->
         <v-list>
-          <v-list-tile @click="" v-for="link in rightLinks">
+          <!-- Buttons from the right side of the toolbar -->
+          <v-list-tile @click="" v-for="link in rightLinks" :href="link.address">
+            <v-list-tile-title> {{link.text}} </v-list-tile-title>
+          </v-list-tile>
+          <!-- Links from the left side of the toolbar -->
+          <v-divider class="hidden-sm-and-up"></v-divider>
+          <v-list-tile @click="" v-for="link in leftLinks" :href="link.address" class="hidden-sm-and-up">
             <v-list-tile-title> {{link.text}} </v-list-tile-title>
           </v-list-tile>
         </v-list>
