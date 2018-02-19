@@ -57,11 +57,11 @@
   },
   "headerLinks": {
     "left": [
-      { "address": "", "text": "LinkedIn",
-        "icon": { "name": "", "icon": "fab fa-linkedin"}
+      { "address": "https://www.linkedin.com/in/robert-nill-096b64112/", "text": "LinkedIn",
+        "icon": { "name": "LinkedIn Icon", "icon": "fab fa-linkedin"}
       },
-      { "address": "", "text": "GitHub",
-        "icon": { "name": "", "icon": "fab fa-github-square"}
+      { "address": "https://github.com/rmnill202", "text": "GitHub",
+        "icon": { "name": "GitHub Icon", "icon": "fab fa-github-square"}
       }
     ],
     "right": [
