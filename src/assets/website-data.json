@@ -1,7 +1,7 @@
 {
   "welcomePage": {
     "websiteName": "Robert Nill",
-    "description": "My website!",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a dui nibh. Aliquam non dui finibus, vestibulum neque eu, dapibus purus. Ut commodo consequat porttitor.",
     "recentEvents": [
       {"description": "B.S. in Software Engineering at RIT", "dateText": "est. May '19"},
       {"description": "Co-op", "dateText": "Jan - Jun '18"},
