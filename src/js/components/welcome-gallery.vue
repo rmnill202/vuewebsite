@@ -1,44 +1,25 @@
 <template>
   <div>
     <div>
-      <!-- Row -->
-      <div style="line-height: 0">
-        <img src="../../assets/test.jpg" class="diamond">
-        <img src="../../assets/test.jpg" class="diamond">
-        <img src="../../assets/test.jpg" class="diamond">
-      </div>
-
-      <!-- Row -->
-      <div class="diamondBelow">
-        <img src="../../assets/test.jpg" class="diamond">
-        <img src="../../assets/test.jpg" class="diamond">
-      </div>
-
-      <!-- Row -->
-      <div class="diamondBelow">
-        <img src="../../assets/test.jpg" class="diamond">
-      </div>
-
-      <!-- Row -->
-      <div class="diamondBelow">
-        <img src="../../assets/test.jpg" class="diamond">
-        <img src="../../assets/test.jpg" class="diamond">
-      </div>
-
-      <!-- Row -->
-      <div class="diamondBelow">
-        <img src="../../assets/test.jpg" class="diamond">
-      </div>
+      <diamond-grid :images="images" :pattern="pattern"></diamond-grid>
     </div>
   </div>
 </template>
 
 <script>
+  import DiamondGrid from './util/diamond-grid.vue';
+
   export default {
     name: 'welcome-gallery',
     props: ['left', 'right', 'center'],
+    components: {DiamondGrid},
     data() {
-
+      return {
+        pattern: [1, 2, ["i", "X", "i"], 2],
+        images: [require("../../assets/test.jpg"), require("../../assets/test.jpg"), require("../../assets/test.jpg"),
+        require("../../assets/test.jpg"), require("../../assets/test.jpg"), require("../../assets/test.jpg"),
+        require("../../assets/test.jpg"),require("../../assets/test.jpg")],
+      }
     }
   }
 </script>
