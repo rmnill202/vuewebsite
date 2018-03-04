@@ -8,8 +8,9 @@
       {"description": "Northrop Grumman Co-op", "dateText": "Jan - Aug '17"}
     ],
     "previewImages": {
-      "left": [],
-      "right": []
+      "left": ["gradient.png", "gradient.png", "gradient.png", "gradient.png"],
+      "right": ["gradient.png", "gradient.png", "gradient.png", "gradient.png"],
+      "center": "gradient.png"
     }
   },
   "projects": [

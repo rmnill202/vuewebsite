@@ -1,12 +1,12 @@
 <template>
   <div>
-    <diamond-grid :images="images" :pattern="altPattern" width=120 height=120 
-                  flip-horizontal=true class="hidden-md-and-up altTop"></diamond-grid>
+    <diamond-grid :images="altImages" :pattern="altPattern" :width="size" :height="size"
+                  class="hidden-md-and-up altTop"></diamond-grid>
     <div style="display: flex; justify-content: center">
-      <diamond-grid :images="images" :pattern="pattern" width=120 height=120 
+      <diamond-grid :images="leftImages" :pattern="pattern" :width="size" :height="size"
                     flip-horizontal=true class="hidden-sm-and-down"></diamond-grid>
-      <img src="../../assets/test.png" class="center">
-      <diamond-grid :images="images" :pattern="pattern" width=120 height=120 
+      <img :src="centerImage" class="center">
+      <diamond-grid :images="rightImages" :pattern="pattern" :width="size" :height="size"
                     class="hidden-sm-and-down"></diamond-grid>
     </div>
   </div>
@@ -22,10 +22,39 @@
     data() {
       return {
         pattern: [["i", "x"], 1, 2],
-        images: [require("../../assets/test.png"), require("../../assets/test.png"), 
-                require("../../assets/test.png"), require("../../assets/test.png")],
+        images: [require("../../assets/gradient.png"), require("../../assets/gradient.png"), 
+                require("../../assets/gradient.png"), require("../../assets/gradient.png")],
         altPattern: [["i", "x", "i"], 2],
-        altImages: [require("../../assets/test.png"), require("../../assets/test.png")]
+        size: 120
+      }
+    },
+    computed: {
+      leftImages() {
+        return this.imageArr(this.left);
+      },
+      rightImages() {
+        return this.imageArr(this.right);
+      },
+      centerImage() {
+        console.log(this.center);
+        return require(`../../assets/${this.center}`);
+      },
+      altImages() {
+        return this.imageArr(this.left);
+      }
+    },
+    methods: {
+      /** 
+       * Construct an array of images. The require call is necessary to load the image.
+       * @param source : The source array of images, which have not yet been required.
+       * @return The array of image sources that can now be bound using v-bind!
+       */
+      imageArr(source) {
+        const imgArr = [];
+        for(let img of source) {
+          imgArr.push(require(`../../assets/${img}`));
+        }
+        return imgArr;
       }
     }
   }

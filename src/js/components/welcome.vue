@@ -6,7 +6,7 @@
     <h1>{{title}}</h1>
 
     <!-- Image gallery -->
-    <welcome-gallery></welcome-gallery>
+    <welcome-gallery :left="left" :right="right" :center="center"></welcome-gallery>
 
     <!-- Description -->
     <div class="description title">{{description}}</div>
@@ -33,8 +33,11 @@
       return {
         title: this.welcomePage.websiteName,
         description: this.welcomePage.description,
-        recentEvents: this.welcomePage.recentEvents
-      };
+        recentEvents: this.welcomePage.recentEvents,
+        left: this.welcomePage.previewImages.left,
+        right: this.welcomePage.previewImages.right,
+        center: this.welcomePage.previewImages.center,
+      }
     },
   };
 </script>
