@@ -1,11 +1,11 @@
 {
   "welcomePage": {
     "websiteName": "Robert Nill",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a dui nibh. Aliquam non dui finibus, vestibulum neque eu, dapibus purus. Ut commodo consequat porttitor.",
+    "description": "This website is a work-in-progress. Check out my GitHub!",
     "recentEvents": [
       {"description": "B.S. in Software Engineering at RIT", "dateText": "est. May '19"},
-      {"description": "Co-op", "dateText": "Jan - Jun '18"},
-      {"description": "Co-op", "dateText": "Jan - Aug '17"}
+      {"description": "Curriculum Associates Co-op", "dateText": "Jan - Jun '18"},
+      {"description": "Northrop Grumman Co-op", "dateText": "Jan - Aug '17"}
     ],
     "previewImages": {
       "left": [],
