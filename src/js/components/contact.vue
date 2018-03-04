@@ -1,6 +1,10 @@
 <template>
   <div>
+    <br>
     <h1>Contact</h1>
+    <div>Under construction...</div>
+    <br>
+    <v-divider></v-divider>
   </div>
 </template>
 
