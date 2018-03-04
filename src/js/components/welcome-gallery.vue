@@ -1,7 +1,7 @@
 <template>
   <div>
     <div>
-      <diamond-grid :images="images" :pattern="pattern"></diamond-grid>
+      <diamond-grid :images="images" :pattern="pattern" width=200 height=200></diamond-grid>
     </div>
   </div>
 </template>
@@ -16,25 +16,13 @@
     data() {
       return {
         pattern: [1, 2, ["i", "X", "i"], 2],
-        images: [require("../../assets/test.jpg"), require("../../assets/test.jpg"), require("../../assets/test.jpg"),
-        require("../../assets/test.jpg"), require("../../assets/test.jpg"), require("../../assets/test.jpg"),
-        require("../../assets/test.jpg"),require("../../assets/test.jpg")],
+        images: [require("../../assets/test.png"), require("../../assets/test.png"), require("../../assets/test.png"),
+          require("../../assets/test.png"), require("../../assets/test.png"), require("../../assets/test.png"), require("../../assets/test.png")],
       }
     }
   }
 </script>
 
 <style>
-  .diamond {
-    -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-    width: 200px;
-    height: 200px;
-    display: inline-block;
-  }
-  .diamondBelow {
-    /*position: relative;*/
-    margin-top:-95px;
-    line-height: 0;
-  }
+
 </style>
