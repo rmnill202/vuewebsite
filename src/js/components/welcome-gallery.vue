@@ -22,8 +22,6 @@
     data() {
       return {
         pattern: [["i", "x"], 1, 2],
-        images: [require("../../assets/gradient.png"), require("../../assets/gradient.png"), 
-                require("../../assets/gradient.png"), require("../../assets/gradient.png")],
         altPattern: [["i", "x", "i"], 2],
         size: 120
       }
@@ -36,7 +34,6 @@
         return this.imageArr(this.right);
       },
       centerImage() {
-        console.log(this.center);
         return require(`../../assets/${this.center}`);
       },
       altImages() {
