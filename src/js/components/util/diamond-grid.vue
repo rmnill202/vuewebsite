@@ -38,9 +38,17 @@
         required: true
       },
       /**
-       * An array of image URLs to populate the grid with.
+       * An array of visual elements to populate the grid with. Each element should be an object with a type
+       *   parameter. Accepted types and formats are listed below:
+       * Type: image
+       *   src: Image URL
+       *
+       * Type: text
+       *   text: The text that will be displayed.
+       *   textStyle: The CSS styling that will be applied to the text.
+       *   bgStyle: The CSS styling that will be applied to the background of the text.
        */
-      images: {
+      elements: {
         type: Array,
         required: true
       },
@@ -106,36 +114,36 @@
         return !this.pattern || this.pattern.length < 1;
       },
       /** 
-       * @return True if there is no image array, or if the array is empty.
+       * @return True if there is no element array, or if the array is empty.
        */
-      noImages() {
-        return !this.images || this.images.length < 1;
+      noElements() {
+        return !this.elements || this.elements.length < 1;
       },
       /** 
-       * Based on the given list of images and the pattern, construct an array of image rows,
+       * Based on the given list of elements and the pattern, construct an array of image rows,
        *  where the first row is what will be rendered at the top of the page. 
        */
       renderRows() {
-        //Don't compute anything if we're missing the pattern or images
-        if(this.noPattern || this.noImages)
+        //Don't compute anything if we're missing the pattern or elements
+        if(this.noPattern || this.noElements)
           return false;
         
         //Create an array of rows in order of the pattern. It'll be reversed later
         const rows = [];
 
-        //Create rows until we run out of images
-        let imageIndex = 0, patternIndex = 0;
+        //Create rows until we run out of elements
+        let elemIndex = 0, patternIndex = 0;
 
-        while(imageIndex > -1) {
-          const rowAndIndices = this.createRow(imageIndex, patternIndex);
-          imageIndex = rowAndIndices.imageIndex;
+        while(elemIndex > -1) {
+          const rowAndIndices = this.createRow(elemIndex, patternIndex);
+          elemIndex = rowAndIndices.elemIndex;
           patternIndex = rowAndIndices.patternIndex;
 
           if(rowAndIndices.row)
             rows.push(this.flipHorizontal ? rowAndIndices.row.reverse() : rowAndIndices.row);
         }
 
-        //Return there reversed order of images by default, as we render top-down
+        //Return there reversed order of elements by default, as we render top-down
         return rows.length > 0 ? (this.flipVertical ? rows : rows.reverse()) : undefined;
       },
       /** 
@@ -163,13 +171,13 @@
         return {marginTop:`-${(this.height / 2) - this.verticalSpacing}px`, lineHeight: 0};
       },
       /** 
-       * @return The CSS classes that should be applied to all images and grid elements.
+       * @return The CSS classes that should be applied to all elements and grid elements.
        */
       imgClass() {
         return ['diamond'];
       },
       /** 
-       * @return Any CSS styling that should be applied to all images. Should be useful
+       * @return Any CSS styling that should be applied to all elements. Should be useful
        *   for any dynamic styles.
        */
       imgStyle() {
@@ -180,18 +188,18 @@
     },
     methods: {
       /** 
-       * Construct a row from the array of images & pattern if possible.
-       * @return An object containing the next image and pattern indices. If a row was created,
+       * Construct a row from the array of elements & pattern if possible.
+       * @return An object containing the next element and pattern indices. If a row was created,
        *   then the row is also included in the object.
        */
-      createRow(imageIndex, patternIndex) {
+      createRow(elemIndex, patternIndex) {
         //Setup some short-hand temp variables
-        let iImg = this.images[imageIndex] ? imageIndex : -1;
+        let iElm = this.elements[elemIndex] ? elemIndex : -1;
         const iPat = this.pattern[patternIndex] ? patternIndex : 0;
 
-        //Check if we have any remaining images
-        if(iImg == -1) {
-          return {imageIndex: -1, patternIndex: -1};
+        //Check if we have any remaining elements
+        if(iElm == -1) {
+          return {elemIndex: -1, patternIndex: -1};
         }
 
         //Grab the next part of the pattern and initialize the new row
@@ -200,26 +208,26 @@
 
         //If the pattern part is an integer
         if(Number.isSafeInteger(part)) {
-          //Grab the number of images requested
-          row.push( ...(this.images.slice(iImg, iImg + part)) );
+          //Grab the number of elements requested
+          row.push( ...(this.elements.slice(iElm, iElm + part)) );
 
           if(row.length < part) { //Fill the rest of the row with empty stuff if necessary
             for(let i = 0; i < (part - row.length); i++) { row.push(''); }
-            iImg = -1;
+            iElm = -1;
           }else { //Otherwise, increment the image index
-            iImg += part;
+            iElm += part;
           }
         }
 
         //If the pattern part is an array
         else if(Array.isArray(part)) {
           for(let el of part) {
-            if(String(el).toLowerCase() === 'i') { //If image doesn't exist, set iImg to -1 and break
-              if(!this.images[iImg]) {
-                iImg = -1;
+            if(String(el).toLowerCase() === 'i') { //If element doesn't exist, set the element index to -1
+              if(!this.elements[iElm]) {
+                iElm = -1;
                 row.push('');
               }else {
-                row.push(this.images[iImg++]);
+                row.push(this.elements[iElm++]);
               }
             }else if(String(el).toLowerCase() === 'x') { //Otherwise add some space to the row
               row.push('');
@@ -228,7 +236,7 @@
         }
         
         //Return the row and updated indices
-        return {'row': ((row.length > 0) ? row : undefined), 'imageIndex': iImg, 'patternIndex': iPat + 1};
+        return {'row': ((row.length > 0) ? row : undefined), 'elemIndex': iElm, 'patternIndex': iPat + 1};
       }
     }
   }
