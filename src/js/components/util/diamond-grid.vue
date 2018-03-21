@@ -1,14 +1,7 @@
 <!-- Header goes here -->
 <template>
   <div>
-    <!-- Start off by rendering the top row -->
-    <div v-if="topRow" :style="topRowStyle" class="allRows">
-      <img v-for="image in topRow" :key="image.id" :src="image" :class="imgClass" :style="imgStyle" v-if="image">
-      <div v-else :class="imgClass" :style="imgStyle"></div>
-    </div>
-
-    <!-- Now render the rest of the content, if it exists -->
-    <div v-for="row in bottomRows" :key="row.id" :style="rowStyle" class="allRows">
+    <div v-for="(row, index) in renderRows" :key="row.id" :style="index === 0 ? topRowStyle : rowStyle" class="allRows">
       <img v-for="image in row" :key="image.id" :src="image" :class="imgClass" :style="imgStyle" v-if="image">
       <div v-else :class="imgClass" :style="imgStyle"></div>
     </div>
@@ -214,7 +207,7 @@
           if(row.length < part) { //Fill the rest of the row with empty stuff if necessary
             for(let i = 0; i < (part - row.length); i++) { row.push(''); }
             iElm = -1;
-          }else { //Otherwise, increment the image index
+          }else { //Otherwise, increment the element index
             iElm += part;
           }
         }
