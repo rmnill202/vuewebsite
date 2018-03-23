@@ -2,13 +2,20 @@
 <template>
   <div>
     <div v-for="(row, index) in renderRows" :key="row.id" :style="index === 0 ? topRowStyle : rowStyle" class="allRows">
-      <img v-for="image in row" :key="image.id" :src="image" :class="imgClass" :style="imgStyle" v-if="image">
-      <div v-else :class="imgClass" :style="imgStyle"></div>
+
+      <!-- Element -->
+      <img v-for="image in row" v-if="image" 
+        :key="image.id" :src="image" 
+        :class="elementClass" :style="elementStyle" @click="imgInfo(image)">
+
+      <!-- Empty space -->
+      <div v-else :class="emptyClass" :style="emptyStyle"/>
     </div>
   </div>
 </template>
 
 <script>
+
   export default {
     name: 'diamond-grid',
     props: {
@@ -29,6 +36,22 @@
       pattern: {
         type: Array,
         required: true
+      },
+      /** 
+       * The index of the selected element, based on the array of elements passed into this component. If passed
+       *   in, will be used to apply a "selected" styling to the element at the given index, and enables selection
+       *   of elements. 
+       */
+      selection: {
+        type: Number,
+        required: false
+      },
+      /** 
+       * An object that optionally defines styling to be applied to elements.
+       */
+      styling: {
+        type: Object,
+        required: false
       },
       /**
        * An array of visual elements to populate the grid with. Each element should be an object with a type
@@ -139,44 +162,44 @@
         //Return there reversed order of elements by default, as we render top-down
         return rows.length > 0 ? (this.flipVertical ? rows : rows.reverse()) : undefined;
       },
-      /** 
-       * @return Rows in order of how they should be rendered, excluding the topmost row.
-       */
-      bottomRows() {
-        return this.renderRows ? this.renderRows.slice(1, this.renderRows.length) : [];
-      },
-      /** 
-       * @return The first row that should be rendered.
-       */
-      topRow() {
-        return this.renderRows ? this.renderRows[0] : [];
-      },
-      /** 
-       * @return Styling for the top row.
-       */
+
+
+      /** Row styling **/
+      /****************/
       topRowStyle() {
         return { lineHeight: 0};
       },
-      /**
-       * @return Styling for the rest of the rows, which is computed based on image height.
-       */
       rowStyle() {
         return {marginTop:`-${(this.height / 2) - this.verticalSpacing}px`, lineHeight: 0};
       },
-      /** 
-       * @return The CSS classes that should be applied to all elements and grid elements.
-       */
-      imgClass() {
+
+      /** Styling for elements & blank spaces **/
+      /*****************************/
+      allClass() {
         return ['diamond'];
       },
-      /** 
-       * @return Any CSS styling that should be applied to all elements. Should be useful
-       *   for any dynamic styles.
-       */
-      imgStyle() {
+      allStyle() {
         return {'width': `${this.width}px`, 'height': `${this.height}px`, 
                 'marginLeft': `${this.margins}px`, 'marginRight': `${this.margins}px`,
                 'minWidth': `${this.width}px`};
+      },
+
+      /** Styling for all elements **/
+      /*****************************/
+      elementClass() {
+        return this.allClass;
+      },
+      elementStyle() {
+        return this.allStyle;
+      },
+
+      /** Styling empty spaces **/
+      /*****************************/
+      emptyClass() {
+        return this.allClass;
+      },
+      emptyStyle() {
+        return this.allStyle;
       }
     },
     methods: {
@@ -230,6 +253,18 @@
         
         //Return the row and updated indices
         return {'row': ((row.length > 0) ? row : undefined), 'elemIndex': iElm, 'patternIndex': iPat + 1};
+      },
+      /** 
+       * Inform the parent context that the selection has changed.
+       * @param newSelection : The index of the new selection, which matches an index located in the elements array.
+       */
+      updateSelection(newSelection) {
+        this.$emit('selected', newSelection);
+      },
+      imgInfo(image) {
+        console.log("\nImage");
+        console.log(image);
+        console.log(image.id);
       }
     }
   }
