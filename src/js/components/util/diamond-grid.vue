@@ -4,8 +4,7 @@
     <div v-for="(row, index) in renderRows" :key="row.id" :style="index === 0 ? topRowStyle : rowStyle" class="allRows">
 
       <!-- Element -->
-      <img v-for="image in row" v-if="image" 
-        :key="image.id" :src="image" 
+      <img v-for="image in row" v-if="image" :src="image.element"
         :class="elementClass" :style="elementStyle" @click="imgInfo(image)">
 
       <!-- Empty space -->
@@ -224,14 +223,16 @@
 
         //If the pattern part is an integer
         if(Number.isSafeInteger(part)) {
-          //Grab the number of elements requested
-          row.push( ...(this.elements.slice(iElm, iElm + part)) );
 
-          if(row.length < part) { //Fill the rest of the row with empty stuff if necessary
+          //Grab the number of elements requested
+          for(let toPush in this.elements.slice(iElm, iElm + part)) { 
+            row.push({'index': iElm, 'element': this.elements[iElm++]})
+          }
+
+          //Fill the rest of the row with empty stuff if necessary
+          if(row.length < part) { 
             for(let i = 0; i < (part - row.length); i++) { row.push(''); }
             iElm = -1;
-          }else { //Otherwise, increment the element index
-            iElm += part;
           }
         }
 
@@ -243,7 +244,7 @@
                 iElm = -1;
                 row.push('');
               }else {
-                row.push(this.elements[iElm++]);
+                row.push({'index': iElm, 'element': this.elements[iElm++]});
               }
             }else if(String(el).toLowerCase() === 'x') { //Otherwise add some space to the row
               row.push('');
