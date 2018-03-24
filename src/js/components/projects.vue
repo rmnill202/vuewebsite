@@ -9,14 +9,13 @@
       <!-- Display the projects in a grid -->
       <div class="gridSelection">
         <diamond-grid :elements="imgs" :pattern="[1,2]" 
-            :selection="selected" @selected="updateSelected" 
+            :selection="selectedIndex" @selected="updateSelected" 
             :width="120" :height="120" 
             class="hidden-sm-and-down"></diamond-grid>
       </div>
       
       <!-- Whatever project is selected, display a preview! -->
-      <project-preview v-for="project in projects" :key="project.id" 
-        :project="project.preview" class="gridPreview"></project-preview>
+      <project-preview v-if="selected" :project="selected" :name="selected.name" class="gridPreview"/>
     </div>
 
     <!-- Container for accordion displayed on smaller screens -->
@@ -52,24 +51,54 @@
     components: {ProjectPreview, DiamondGrid},
     data() {
       return {
-        selected: 1
+        selectedIndex: -1
       };
     },
     computed: {
       imgs() {
         return this.testArr(`gradient.png`);
+      },
+      projectData() {
+        const projectData = [];
+
+        //Loop through each project and gather the following data:
+        for(let i = 0; i < this.projects.length; i++) {
+          // console.log("Projects");
+          // console.log(this.projects);
+          // console.log(proj);
+          const proj = this.projects[i];
+          projectData.push({
+            'name': proj.preview.name, //Name
+            'description': proj.preview.description, //Description
+            'image': this.getImage(proj.preview.images) //First image OR default image
+          });
+        }
+
+        return projectData;
+      },
+      selected() {
+        console.log(this.projectData[this.selectedIndex]);
+        return this.projectData[this.selectedIndex];
+        // return false;
       }
     },
     methods: {
       updateSelected(newIndex) {
-        console.log(newIndex);
+        this.selectedIndex = (newIndex === this.selectedIndex) ? -1 : newIndex;
       },
       testArr(img) {
         const imgArr = [];
-        for(let i = 0; i < 10; i++) {
+        for(let i = 0; i < this.projectData.length; i++) {
           imgArr.push(require(`../../assets/${img}`));
         }
         return imgArr;
+      },
+      getImage(images) {
+        if(!images || !images.length) {
+          return require(`../../assets/${images[0]}`);
+        } else {
+          return require(`../../assets/gradient.png`);
+        }
       }
     }
   };

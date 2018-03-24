@@ -21,7 +21,18 @@
         "startDate": "",
         "endDate": "",
         "images": [
-          {"name": "Image", "img": "/"}
+          {"name": "Image", "img": "test4.jpg"}
+        ]
+      }
+    },
+    {
+      "preview": {
+        "name": "AFRS",
+        "description": "It's not healthnet!",
+        "startDate": "",
+        "endDate": "",
+        "images": [
+          {"name": "Image", "img": "test2.jpg"}
         ]
       }
 	  }

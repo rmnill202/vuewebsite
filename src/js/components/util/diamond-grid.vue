@@ -5,7 +5,7 @@
 
       <!-- Element -->
       <img v-for="image in row" v-if="image" :src="image.element"
-        :class="elementClass" :style="elementStyle" @click="imgInfo(image)">
+        :class="elementClass" :style="isSelected(image.index) ? selectedStyle : elementStyle" @click="selectElement(image.index)">
 
       <!-- Empty space -->
       <div v-else :class="emptyClass" :style="emptyStyle"/>
@@ -191,6 +191,9 @@
       elementStyle() {
         return this.allStyle;
       },
+      selectedStyle() {
+        return Object.assign({}, this.elementStyle, {'opacity': '0.5'});
+      },
 
       /** Styling empty spaces **/
       /*****************************/
@@ -257,15 +260,16 @@
       },
       /** 
        * Inform the parent context that the selection has changed.
-       * @param newSelection : The index of the new selection, which matches an index located in the elements array.
+       * @param index : The index of the new selection, which matches an index located in the elements array.
        */
-      updateSelection(newSelection) {
-        this.$emit('selected', newSelection);
+      selectElement(index) {
+        this.$emit('selected', index);
       },
-      imgInfo(image) {
-        console.log("\nImage");
-        console.log(image);
-        console.log(image.id);
+      /** 
+       * @return True if the element's index indicates that it has been selected.
+       */
+      isSelected(index) {
+        return index === this.selection;
       }
     }
   }
@@ -281,5 +285,6 @@
   .allRows {
     display: flex;
     justify-content: center;
+    align-items: center;
   }
 </style>
