@@ -15,26 +15,20 @@
       </div>
       
       <!-- Whatever project is selected, display a preview! -->
-      <project-preview v-if="selected" :project="selected" :name="selected.name" class="gridPreview"/>
+      <project-preview v-if="selected" :project="selected" :mediaHeight="'200px'" class="gridPreview"/>
     </div>
 
     <!-- Container for accordion displayed on smaller screens -->
     <div class="hidden-md-and-up smaller">
-      <v-expansion-panel>
-        <v-expansion-panel-content v-for="i in imgs"  class="grey lighten-2">
+      <v-container fluid grid-list-lg>
+        <v-layout row wrap>
+          
+          <v-flex v-for="(project, index) in projectData" xs12>
+            <project-preview :project="projectData[projectData.length -1 -index]" :mediaHeight="'100px'"/>
+          </v-flex>
 
-          <!-- Title of the accordion -->
-          <div slot="header">Title</div>
-
-          <!-- Content -->
-          <v-card>
-            <v-card-text class="grey lighten-3">
-              My content
-            </v-card-text>
-          </v-card>
-
-        </v-expansion-panel-content>
-      </v-expansion-panel>
+        </v-layout>
+      </v-container>
     </div>
 
     <br><v-divider></v-divider>
@@ -63,9 +57,6 @@
 
         //Loop through each project and gather the following data:
         for(let i = 0; i < this.projects.length; i++) {
-          // console.log("Projects");
-          // console.log(this.projects);
-          // console.log(proj);
           const proj = this.projects[i];
           projectData.push({
             'name': proj.preview.name, //Name
@@ -77,9 +68,7 @@
         return projectData;
       },
       selected() {
-        console.log(this.projectData[this.selectedIndex]);
         return this.projectData[this.selectedIndex];
-        // return false;
       }
     },
     methods: {
@@ -95,10 +84,15 @@
       },
       getImage(images) {
         if(!images || !images.length) {
-          return require(`../../assets/${images[0]}`);
-        } else {
           return require(`../../assets/gradient.png`);
+        } else {
+          return require(`../../assets/${images[0].img}`);
         }
+      },
+      gridSize(index) {
+        const length =  this.projectData.length - 1;
+        const full = index === 0 || (index === length && length % 2);
+        return {[`xs${full ? '12' : '6'}`]: true};
       }
     }
   };
