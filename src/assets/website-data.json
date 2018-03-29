@@ -17,44 +17,72 @@
     {
       "preview": {
         "name": "Healthnet",
-        "description": "It's healthnet!",
-        "startDate": "",
-        "endDate": "",
+        "description": "Hospital management and patient registration system, made with Python and Django!",
+        "startDate": "01/16",
+        "endDate": "05/16",
         "images": [
           {"name": "Image", "img": "test4.jpg"}
+        ],
+        "links": [
+          {"text": "More", "url": ""}
         ]
       }
     },
     {
       "preview": {
         "name": "AFRS",
-        "description": "It's not healthnet!",
-        "startDate": "",
-        "endDate": "",
+        "description": "API for reserving flights and querying airport data.",
+        "startDate": "09/16",
+        "endDate": "12/16",
         "images": [
           {"name": "Image", "img": "test2.jpg"}
+        ],
+        "links": [
+          {"text": "More", "url": ""}
         ]
       }
 	  },
     {
       "preview": {
         "name": "Pantreats",
-        "description": "It's not healthnet!",
-        "startDate": "",
-        "endDate": "",
+        "description": "Web application for exploring recipes based on the ingredients in your kitchen.",
+        "startDate": "09/17",
+        "endDate": "12/17",
         "images": [
           {"name": "Image", "img": "test2.jpg"}
+        ],
+        "links": [
+          {"text": "More", "url": ""}
+        ]
+      }
+    },
+    {
+      "preview": {
+        "name": "Catalyst",
+        "description": "Dungeon crawler developed with Java & LibGDX.",
+        "startDate": "09/17",
+        "endDate": "Now",
+        "images": [
+          {"name": "Image", "img": "test2.jpg"}
+        ],
+        "links": [
+          {"text": "More", "url": ""},
+          {"text": "GitHub", "url": ""}
         ]
       }
 	  },
     {
       "preview": {
-        "name": "Other",
-        "description": "It's not healthnet!",
-        "startDate": "",
-        "endDate": "",
+        "name": "Personal Vue Website",
+        "description": "Woohoo!",
+        "startDate": "01/18",
+        "endDate": "Now",
         "images": [
-          {"name": "Image", "img": "test2.jpg"}
+          {"name": "Image", "img": "projects/previews/vue-website-icon.png"}
+        ],
+        "links": [
+          {"text": "More", "url": ""},
+          {"text": "GitHub", "url": "https://github.com/rmnill202/vuewebsite"}
         ]
       }
 	  }

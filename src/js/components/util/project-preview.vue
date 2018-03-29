@@ -1,9 +1,9 @@
 <template>
   <div>
-    <v-card>
+    <v-card :style="cardStyle">
       
       <!-- Card Image -->
-      <v-card-media :style="mediaStyle" :src="imgTest">
+      <v-card-media :style="mediaStyle" :src="image">
         <v-card-text>
           <span class="title imageText">{{name}}</span>
         </v-card-text>
@@ -19,14 +19,14 @@
         <v-spacer/>
 
         <!-- More links -->
-        <v-btn flat>Hello</v-btn>
+        <v-btn flat v-for="link in links" :key="link.text" target="_blank" rel="noopener noreferrer" :href="link.url">{{link.text}}</v-btn>
       </v-card-actions>
 
       <!-- Expandable content -->
       <v-slide-y-transition>
-      <v-card-text v-show="expanded" style="text-align: left; padding-top: 0px">
-        {{description}}
-      </v-card-text>
+        <v-card-text v-show="expanded" style="text-align: left; padding-top: 0px">
+          {{description}}
+        </v-card-text>
       </v-slide-y-transition>
 
     </v-card>
@@ -36,27 +36,27 @@
 <script>
   export default {
     name: 'project-preview',
-    props: ['project', 'mediaHeight'],
+    props: ['project', 'mediaHeight', 'width'],
     data() {
       return {
-        expanded: false,
+        expanded: true,
         name: this.project.name,
         description: this.project.description,
         start: this.project.startDate,
         end: this.project.endDate,
-        images: this.project.images,
-        imgTest: `${require("../../../assets/gradient.png")}`
+        image: this.project.image,
+        links: this.project.links
       }
     },
     computed: {
+      /** 
+       * Styling to be used for the preview image/text section.
+       */
       mediaStyle() {
         return {'height': this.mediaHeight || ''};
-      }
-    },
-    watch: {
-      project(newProject, oldProject) {
-        this.name = newProject.name;
-        this.description = newProject.description;
+      },
+      cardStyle() {
+        return {'width': this.width || ''};
       }
     }
   }

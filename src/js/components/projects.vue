@@ -8,14 +8,16 @@
 
       <!-- Display the projects in a grid -->
       <div class="gridSelection">
-        <diamond-grid :elements="imgs" :pattern="[1,2]" 
+        <diamond-grid :elements="images" :pattern="[1,2]" 
             :selection="selectedIndex" @selected="updateSelected" 
             :width="120" :height="120" 
             class="hidden-sm-and-down"></diamond-grid>
       </div>
       
       <!-- Whatever project is selected, display a preview! -->
-      <project-preview v-if="selected" :project="selected" :mediaHeight="'200px'" class="gridPreview"/>
+      <v-slide-x-reverse-transition mode="out-in">
+        <project-preview v-if="selected" :key="selected.key" :project="selected" :mediaHeight="'200px'" :width="'400px'" class="gridPreview"/>
+      </v-slide-x-reverse-transition>
     </div>
 
     <!-- Container for accordion displayed on smaller screens -->
@@ -45,13 +47,26 @@
     components: {ProjectPreview, DiamondGrid},
     data() {
       return {
-        selectedIndex: -1
+        selectedIndex: this.projects.length - 1
       };
     },
     computed: {
-      imgs() {
-        return this.testArr(`gradient.png`);
+      /** 
+       * Images to be used for the grid of diamonds.
+       */
+      images() {
+        const projectData = [];
+
+        //Loop through each project and gather the following data:
+        for(let i = 0; i < this.projects.length; i++) {
+          projectData.push(this.getImage(this.projects[i].preview.images));
+        }
+
+        return projectData;
       },
+      /** 
+       * Pull out any necessary project data into an array of objects.
+       */
       projectData() {
         const projectData = [];
 
@@ -61,34 +76,46 @@
           projectData.push({
             'name': proj.preview.name, //Name
             'description': proj.preview.description, //Description
-            'image': this.getImage(proj.preview.images) //First image OR default image
+            'image': this.getImage(proj.preview.images), //First image OR default image
+            'startDate': proj.preview.startDate,
+            'endDate': proj.preview.endDate,
+            'links': proj.preview.links,
+            'key': i
           });
         }
 
         return projectData;
       },
+      /** 
+       * The currently selected object.
+       */
       selected() {
         return this.projectData[this.selectedIndex];
       }
     },
     methods: {
+      /** 
+       * Update the currently selected project.
+       */
       updateSelected(newIndex) {
         this.selectedIndex = (newIndex === this.selectedIndex) ? -1 : newIndex;
       },
-      testArr(img) {
-        const imgArr = [];
-        for(let i = 0; i < this.projectData.length; i++) {
-          imgArr.push(require(`../../assets/${img}`));
-        }
-        return imgArr;
-      },
+      /** 
+       * Given an array of project images, load the first image, or a placeholder if the
+       *   array is empty.
+       */
       getImage(images) {
         if(!images || !images.length) {
           return require(`../../assets/gradient.png`);
         } else {
+          console.log("This is a thing");
           return require(`../../assets/${images[0].img}`);
         }
       },
+      /** 
+       * Meant for determining the number of grid-spaces to be taken up by a project in
+       *   the smaller project view. Not used right now, but might be used again.
+       */
       gridSize(index) {
         const length =  this.projectData.length - 1;
         const full = index === 0 || (index === length && length % 2);

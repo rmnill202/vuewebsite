@@ -2,7 +2,7 @@
   <div>
     <v-toolbar flat dense>
       <!-- Icons on the left side of the toolbar -->
-      <v-btn icon v-for="link in leftLinks" :key="link.id" :href="link.address" target="_blank" class="hidden-xs-only">
+      <v-btn icon v-for="link in leftLinks" :key="link.id" :href="link.address" target="_blank" rel="noopener noreferrer" class="hidden-xs-only">
         <v-icon>{{link.icon.icon}}</v-icon>
       </v-btn>
 
