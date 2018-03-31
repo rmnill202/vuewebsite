@@ -17,11 +17,98 @@
     {
       "preview": {
         "name": "Healthnet",
-        "description": "It's healthnet!",
-        "startDate": "",
-        "endDate": "",
+        "description": "Hospital management & patient registration system.",
+        "startDate": "01/16",
+        "endDate": "05/16",
         "images": [
-          {"name": "Image", "img": "/"}
+          {"name": "Image", "img": "projects/previews/vue-website-icon2.png"}
+        ],
+        "tags": [
+          {"text": "Class Project", "icon": "fas fa-graduation-cap"},
+          {"text": "Python", "icon": "fab fa-python"}
+        ]
+      }
+    },
+    {
+      "preview": {
+        "name": "AFRS",
+        "description": "API for reserving flights and querying airport data.",
+        "startDate": "09/16",
+        "endDate": "12/16",
+        "images": [
+          {"name": "Image", "img": "projects/previews/vue-website-icon2.png"}
+        ],
+        "tags": [
+          {"text": "Class Project", "icon": "fas fa-graduation-cap"},
+          {"text": "Java", "icon": "fas fa-coffee"}
+        ]
+      }
+	  },
+    {
+      "preview": {
+        "name": "Pantreats",
+        "description": "Web application for exploring recipes based on the ingredients in your kitchen.",
+        "startDate": "09/17",
+        "endDate": "12/17",
+        "images": [
+          {"name": "Image", "img": "projects/previews/vue-website-icon2.png"}
+        ],
+        "links": [
+          {"text": "GitHub", "url": "https://github.com/Sypherio/swen444-pantreats"}
+        ],
+        "tags": [
+          {"text": "Class Project", "icon": "fas fa-graduation-cap"},
+          {"text": "JavaScript", "icon": "fab fa-js-square"},
+          {"text": "VueJS", "icon": "fab fa-vuejs"}
+        ]
+      }
+    },
+    {
+      "preview": {
+        "name": "Catalyst",
+        "description": "Dungeon crawler developed with Java & LibGDX.",
+        "startDate": "09/17",
+        "endDate": "Now",
+        "images": [
+          {"name": "Image", "img": "projects/previews/vue-website-icon2.png"}
+        ],
+        "tags": [
+          {"text": "Personal Project", "icon": "fas fa-user-circle"},
+          {"text": "Java", "icon": "fas fa-coffee"}
+        ]
+      }
+	  },
+    {
+      "preview": {
+        "name": "Personal Vue Website",
+        "description": "Portfolio and a spot for cool things",
+        "startDate": "01/18",
+        "endDate": "Now",
+        "images": [
+          {"name": "Image", "img": "projects/previews/vue-website-icon2.png"}
+        ],
+        "links": [
+          {"text": "GitHub", "url": "https://github.com/rmnill202/vuewebsite"}
+        ],
+        "tags": [
+          {"text": "Personal Project", "icon": "fas fa-user-circle"},
+          {"text": "JavaScript", "icon": "fab fa-js-square"},
+          {"text": "VueJS", "icon": "fab fa-vuejs"}
+        ]
+      }
+	  },
+    {
+      "preview": {
+        "name": "MyBoard PI",
+        "description": "Whiteboard app for RPIs",
+        "startDate": "03/18",
+        "endDate": "Now",
+        "images": [
+          {"name": "Image", "img": "projects/previews/vue-website-icon2.png"}
+        ],
+        "tags": [
+          {"text": "Personal Project", "icon": "fas fa-user-circle"},
+          {"text": "Hardware", "icon": "fas fa-hdd"}
         ]
       }
 	  }

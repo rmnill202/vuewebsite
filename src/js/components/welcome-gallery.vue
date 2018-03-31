@@ -1,12 +1,12 @@
 <template>
   <div>
-    <diamond-grid :images="altImages" :pattern="altPattern" :width="size" :height="size"
+    <diamond-grid :elements="altImages" :pattern="altPattern" :width="size" :height="size"
                   class="hidden-md-and-up altTop"></diamond-grid>
     <div style="display: flex; justify-content: center">
-      <diamond-grid :images="leftImages" :pattern="pattern" :width="size" :height="size"
+      <diamond-grid :elements="leftImages" :pattern="pattern" :width="size" :height="size"
                     flip-horizontal=true class="hidden-sm-and-down"></diamond-grid>
       <img :src="centerImage" class="center">
-      <diamond-grid :images="rightImages" :pattern="pattern" :width="size" :height="size"
+      <diamond-grid :elements="rightImages" :pattern="pattern" :width="size" :height="size"
                     class="hidden-sm-and-down"></diamond-grid>
     </div>
   </div>
