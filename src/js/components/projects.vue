@@ -6,8 +6,8 @@
     <!-- Container for the two columns displayed on larger screens -->
     <div class="hidden-sm-and-down larger"> 
 
-      <!-- Display the projects in a grid -->
-      <div class="gridSelection">
+      <!-- Display the projects in a flexbox -->
+      <div>
         <diamond-grid :elements="images" :pattern="[1,2]" 
             :selection="selectedIndex" @selected="updateSelected" 
             :width="120" :height="120" 
@@ -16,7 +16,7 @@
       
       <!-- Whatever project is selected, display a preview! -->
       <v-slide-x-reverse-transition mode="out-in">
-        <project-preview v-if="selected" :key="selected.key" :project="selected" :mediaHeight="'350px'" :width="'350px'" class="gridPreview"/>
+        <project-preview v-if="selected" :key="selected.key" :project="selected" :mediaHeight="'350px'" :width="'350px'"/>
       </v-slide-x-reverse-transition>
     </div>
 
@@ -128,19 +128,12 @@
 
 <style>
   .larger {
-    display: grid;
+    display: flex;
+    justify-content: space-around;
     grid-template-columns: 40% 20% 40%;
-    margin-left: 5%;
-    margin-right: 5%;
   }
   .smaller {
     margin-left: 5%;
     margin-right: 5%;
-  }
-  .gridSelection {
-    grid-column: 1 / 2;
-  }
-  .gridPreview {
-    grid-column: 3 / 4;
   }
 </style>
