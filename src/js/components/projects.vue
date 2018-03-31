@@ -16,7 +16,7 @@
       
       <!-- Whatever project is selected, display a preview! -->
       <v-slide-x-reverse-transition mode="out-in">
-        <project-preview v-if="selected" :key="selected.key" :project="selected" :mediaHeight="'200px'" :width="'400px'" class="gridPreview"/>
+        <project-preview v-if="selected" :key="selected.key" :project="selected" :mediaHeight="'350px'" :width="'350px'" class="gridPreview"/>
       </v-slide-x-reverse-transition>
     </div>
 
@@ -26,7 +26,7 @@
         <v-layout row wrap>
           
           <v-flex v-for="(project, index) in projectData" xs12>
-            <project-preview :project="projectData[projectData.length -1 -index]" :mediaHeight="'100px'"/>
+            <project-preview :project="projectData[projectData.length -1 -index]" :mediaHeight="'120px'"/>
           </v-flex>
 
         </v-layout>
@@ -47,7 +47,7 @@
     components: {ProjectPreview, DiamondGrid},
     data() {
       return {
-        selectedIndex: this.projects.length - 1
+        selectedIndex: 4 //this.projects.length - 1
       };
     },
     computed: {
@@ -80,6 +80,7 @@
             'startDate': proj.preview.startDate,
             'endDate': proj.preview.endDate,
             'links': proj.preview.links,
+            'tags': proj.preview.tags,
             'key': i
           });
         }
