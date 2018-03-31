@@ -5,37 +5,42 @@
       <!-- Card Image -->
       <v-card-media :style="mediaStyle" :src="image">
         <v-card-text>
+
+          <!-- Project title -->
           <span class="title imageText">{{name}}</span>
+
+          <!-- Display tags at the bottom of the card -->
           <div v-if="tags" class="tagContainer">
-            <!-- <v-icon v-for="tag in tags">{{tag.icon}}</v-icon> -->
-            <!-- <v-btn icon v-for="tag in tags" style="margin: 5px 0 0 0">
-              <v-icon color="white">{{tag.icon}}</v-icon>
-            </v-btn> -->
             <template v-for="tag in tags">
+
+              <!-- And provide a tooltip for each tag! -->
               <v-tooltip bottom>
                 <v-icon color="white" slot="activator" style="padding-right: 10px">{{tag.icon}}</v-icon>
-                <span>{{tag.text}}</span>
+                <span>{{tag.text}}</span> <!-- Tooltip text -->
               </v-tooltip>
+
             </template>
           </div>
+
         </v-card-text>
       </v-card-media>
 
-      <!-- Buttons -->
+      <!-- Tagline/description -->
       <v-card-actions>
-        <!-- Tagline -->
-        <span class="">{{description}}</span>
+        <span class="">{{description}}</span> <!-- Tagline -->
       </v-card-actions>
 
+      <!-- New row for the date display and links -->
       <v-card-actions>
-        <template v-if="start && end">
-          <span class="dateDisplay">{{`${start} - ${end}`}}</span>
-          <!-- <v-btn color="grey darken-1 white--text" small>{{`${start} - ${end}`}}</v-btn> -->
-        </template>
+
+        <!-- Date -->
+        <span v-if="start && end" class="dateDisplay">{{`${start} - ${end}`}}</span>
 
         <v-spacer/>
 
+        <!-- Links -->
         <v-btn raised v-for="link in links" :key="link.text" color="grey darken-1 white--text" small target="_blank" rel="noopener noreferrer" :href="link.url">{{link.text}}</v-btn>
+
       </v-card-actions>
     </v-card>
   </div>
@@ -92,7 +97,6 @@
   }
   .dateDisplay {
     padding: 2px 8px 2px 8px;
-    /* background-color: lightgray; */
     background-color: #757575;
     color: white;
     border-radius: 2px;

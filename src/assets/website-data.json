@@ -72,10 +72,6 @@
         "images": [
           {"name": "Image", "img": "projects/previews/vue-website-icon2.png"}
         ],
-        "links": [
-          {"text": "More", "url": ""},
-          {"text": "GitHub", "url": ""}
-        ],
         "tags": [
           {"text": "Personal Project", "icon": "fas fa-user-circle"},
           {"text": "Java", "icon": "fas fa-coffee"}
@@ -92,7 +88,6 @@
           {"name": "Image", "img": "projects/previews/vue-website-icon2.png"}
         ],
         "links": [
-          {"text": "More", "url": ""},
           {"text": "GitHub", "url": "https://github.com/rmnill202/vuewebsite"}
         ],
         "tags": [

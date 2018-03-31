@@ -25,7 +25,8 @@
       <v-container fluid grid-list-lg>
         <v-layout row wrap>
           
-          <v-flex v-for="(project, index) in projectData" xs12>
+          <!-- Project preview -->
+          <v-flex v-for="(project, index) in projectData" xs12> 
             <project-preview :project="projectData[projectData.length -1 -index]" :mediaHeight="'120px'"/>
           </v-flex>
 
@@ -47,7 +48,7 @@
     components: {ProjectPreview, DiamondGrid},
     data() {
       return {
-        selectedIndex: 4 //this.projects.length - 1
+        selectedIndex: 4 
       };
     },
     computed: {
@@ -109,7 +110,6 @@
         if(!images || !images.length) {
           return require(`../../assets/gradient.png`);
         } else {
-          console.log("This is a thing");
           return require(`../../assets/${images[0].img}`);
         }
       },
