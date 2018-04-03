@@ -116,13 +116,57 @@
   "about": [
     {
       "name": "Software",
-      "description": "Software engineering is cool!",
+      "description": "TO DO",
       "image": {
-        "name": "An image!",
-        "img": "/"
+        "name": "TO DO",
+        "img": "TO DO"
         },
       "bulletPoints": [
-        {"text": "A bullet point!"}
+        {"text": "TO DO"},
+        {"text": "TO DO"},
+        {"text": "TO DO"}
+      ]
+    },
+    {
+      "name": "Music",
+      "description": "TO DO",
+      "icon": "fas fa-headphones",
+      "bulletPoints": [
+        {"text": "TO DO"}
+      ]
+	  },
+    {
+      "name": "Games",
+      "description": "TO DO",
+      "image": {
+        "name": "TO DO",
+        "img": "TO DO"
+        },
+      "icon": "fas fa-gamepad",
+      "bulletPoints": [
+        {"text": "TO DO"}
+      ]
+	  },
+    {
+      "name": "UX",
+      "description": "TO DO",
+      "image": {
+        "name": "TO DO",
+        "img": "TO DO"
+        },
+      "bulletPoints": [
+        {"text": "TO DO"}
+      ]
+	  },
+    {
+      "name": "3D Printing",
+      "description": "TO DO",
+      "image": {
+        "name": "TO DO",
+        "img": "TO DO"
+        },
+      "bulletPoints": [
+        {"text": "TO DO"}
       ]
 	  }
   ],
