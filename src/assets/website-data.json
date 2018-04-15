@@ -192,10 +192,10 @@
       "icon": "fas fa-code",
       "image": {
         "name": "TO DO",
-        "img": "TO DO"
+        "img": "gradient.png"
       },
       "gallery": [
-        {"img": "", "text": "Stuff"}
+        {"img": "gradient.png", "text": "Stuff"}
       ]
     }
   ],
