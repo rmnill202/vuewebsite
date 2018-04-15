@@ -116,66 +116,87 @@
   "about": [
     {
       "name": "Software",
-      "description": "TO DO",
+      "description": "I'm a software engineer!",
+      "icon": "fas fa-code",
       "image": {
         "name": "TO DO",
-        "img": "TO DO"
-        },
-      "bulletPoints": [
-        {"text": "TO DO"},
-        {"text": "TO DO"},
-        {"text": "TO DO"}
+        "img": "gradient.png"
+      },
+      "gallery": [
+        {"img": "gradient.png", "text": "A"},
+        {"img": "gradient.png", "text": "B"},
+        {"img": "gradient.png", "text": "C"}
       ]
     },
     {
       "name": "Music",
-      "description": "TO DO",
+      "description": "Stuff I listen to",
       "icon": "fas fa-headphones",
-      "bulletPoints": [
-        {"text": "TO DO"}
+      "image": {
+        "name": "TO DO",
+        "img": "gradient.png"
+      },
+      "gallery": [
+        {"img": "gradient.png", "text": "A"},
+        {"img": "gradient.png", "text": "B"},
+        {"img": "gradient.png", "text": "C"}
       ]
 	  },
     {
       "name": "Games",
-      "description": "TO DO",
+      "description": "Games I play",
+      "icon": "fas fa-gamepad",
       "image": {
         "name": "TO DO",
-        "img": "TO DO"
-        },
-      "icon": "fas fa-gamepad",
-      "bulletPoints": [
-        {"text": "TO DO"}
+        "img": "gradient.png"
+      },
+      "gallery": [
+        {"img": "gradient.png", "text": "A"},
+        {"img": "gradient.png", "text": "B"},
+        {"img": "gradient.png", "text": "C"}
       ]
 	  },
     {
       "name": "UX",
-      "description": "TO DO",
+      "description": "Cool experiences",
+      "icon": "fas fa-user",
       "image": {
         "name": "TO DO",
-        "img": "TO DO"
-        },
-      "bulletPoints": [
-        {"text": "TO DO"}
+        "img": "gradient.png"
+      },
+      "gallery": [
+        {"img": "gradient.png", "text": "A"},
+        {"img": "gradient.png", "text": "B"},
+        {"img": "gradient.png", "text": "C"}
       ]
 	  },
     {
       "name": "3D Printing",
-      "description": "TO DO",
+      "description": "Fun hobby",
+      "icon": "fas fa-cubes",
       "image": {
         "name": "TO DO",
-        "img": "TO DO"
-        },
-      "bulletPoints": [
-        {"text": "TO DO"}
+        "img": "gradient.png"
+      },
+      "gallery": [
+        {"img": "gradient.png", "text": "A"},
+        {"img": "gradient.png", "text": "B"},
+        {"img": "gradient.png", "text": "C"}
       ]
 	  }
   ],
   "skillsets": [
-    { "name": "Title", "description": "Description",
+    {
+      "name": "Software",
+      "description": "I'm a software engineer",
+      "icon": "fas fa-code",
       "image": {
-        "name": "An image!",
-        "img": "/"
-      }
+        "name": "TO DO",
+        "img": "TO DO"
+      },
+      "gallery": [
+        {"img": "", "text": "Stuff"}
+      ]
     }
   ],
   "contactInfo": {
