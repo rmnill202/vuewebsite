@@ -116,22 +116,87 @@
   "about": [
     {
       "name": "Software",
-      "description": "Software engineering is cool!",
+      "description": "I'm a software engineer!",
+      "icon": "fas fa-code",
       "image": {
-        "name": "An image!",
-        "img": "/"
-        },
-      "bulletPoints": [
-        {"text": "A bullet point!"}
+        "name": "TO DO",
+        "img": "gradient.png"
+      },
+      "gallery": [
+        {"img": "gradient.png", "text": "A"},
+        {"img": "gradient.png", "text": "B"},
+        {"img": "gradient.png", "text": "C"}
+      ]
+    },
+    {
+      "name": "Music",
+      "description": "Stuff I listen to",
+      "icon": "fas fa-headphones",
+      "image": {
+        "name": "TO DO",
+        "img": "gradient.png"
+      },
+      "gallery": [
+        {"img": "gradient.png", "text": "A"},
+        {"img": "gradient.png", "text": "B"},
+        {"img": "gradient.png", "text": "C"}
+      ]
+	  },
+    {
+      "name": "Games",
+      "description": "Games I play",
+      "icon": "fas fa-gamepad",
+      "image": {
+        "name": "TO DO",
+        "img": "gradient.png"
+      },
+      "gallery": [
+        {"img": "gradient.png", "text": "A"},
+        {"img": "gradient.png", "text": "B"},
+        {"img": "gradient.png", "text": "C"}
+      ]
+	  },
+    {
+      "name": "UX",
+      "description": "Cool experiences",
+      "icon": "fas fa-user",
+      "image": {
+        "name": "TO DO",
+        "img": "gradient.png"
+      },
+      "gallery": [
+        {"img": "gradient.png", "text": "A"},
+        {"img": "gradient.png", "text": "B"},
+        {"img": "gradient.png", "text": "C"}
+      ]
+	  },
+    {
+      "name": "3D Printing",
+      "description": "Fun hobby",
+      "icon": "fas fa-cubes",
+      "image": {
+        "name": "TO DO",
+        "img": "gradient.png"
+      },
+      "gallery": [
+        {"img": "gradient.png", "text": "A"},
+        {"img": "gradient.png", "text": "B"},
+        {"img": "gradient.png", "text": "C"}
       ]
 	  }
   ],
   "skillsets": [
-    { "name": "Title", "description": "Description",
+    {
+      "name": "Software",
+      "description": "I'm a software engineer",
+      "icon": "fas fa-code",
       "image": {
-        "name": "An image!",
-        "img": "/"
-      }
+        "name": "TO DO",
+        "img": "TO DO"
+      },
+      "gallery": [
+        {"img": "", "text": "Stuff"}
+      ]
     }
   ],
   "contactInfo": {
