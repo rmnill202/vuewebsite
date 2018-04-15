@@ -19,9 +19,19 @@
       <span>{{value.description}}</span>
 
       <!-- Bullet Points -->
-      <div v-for="point in value.bulletPoints">
-        {{point.text}}
-      </div>
+      <v-list v-if="value.bulletPoints" dense>
+        <v-list-tile v-for="point in value.bulletPoints">
+
+          <v-list-tile-action style="min-width: 0; padding-right: 10px;" >
+            <v-icon v-if="point.icon">{{point.icon}}</v-icon>
+          </v-list-tile-action>
+
+          <v-list-tile-content>
+            <span>{{point.text}}</span>
+          </v-list-tile-content>
+
+        </v-list-tile>
+      </v-list>
 
       <!-- Gallery -->
       <v-container v-if="value.gallery" grid-list-xs style="margin-top: 16px">
