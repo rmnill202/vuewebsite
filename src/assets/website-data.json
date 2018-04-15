@@ -187,15 +187,30 @@
   ],
   "skillsets": [
     {
-      "name": "Software",
-      "description": "I'm a software engineer",
-      "icon": "fas fa-code",
-      "image": {
-        "name": "TO DO",
-        "img": "gradient.png"
-      },
-      "gallery": [
-        {"img": "gradient.png", "text": "Stuff"}
+      "name": "What I Know",
+      "icon": "far fa-lightbulb",
+      "bulletPoints": [
+        {"text": "Stuff", "icon": "fas fa-arrow-alt-circle-right"},
+        {"text": "Stuff", "icon": "fas fa-arrow-alt-circle-right"},
+        {"text": "Stuff", "icon": "fas fa-arrow-alt-circle-right"}
+      ]
+    },
+    {
+      "name": "Experienced In",
+      "icon": "fas fa-book",
+      "bulletPoints": [
+        {"text": "Stuff", "icon": "fas fa-arrow-alt-circle-right"},
+        {"text": "Stuff", "icon": "fas fa-arrow-alt-circle-right"},
+        {"text": "Stuff", "icon": "fas fa-arrow-alt-circle-right"}
+      ]
+    },
+    {
+      "name": "Want To Know",
+      "icon": "fas fa-exclamation",
+      "bulletPoints": [
+        {"text": "Stuff", "icon": "fas fa-arrow-alt-circle-right"},
+        {"text": "Stuff", "icon": "fas fa-arrow-alt-circle-right"},
+        {"text": "Stuff", "icon": "fas fa-arrow-alt-circle-right"}
       ]
     }
   ],
