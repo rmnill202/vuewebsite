@@ -220,8 +220,12 @@
       { "address": "rmnill202mail@gmail.com", "info": "Personal e-mail address" }
 	  ],
     "socialMedia": [
-      { "websiteName": "GitHub", "link": "https://github.com/rmnill202/" }
-    ]
+      { "websiteName": "GitHub", "link": "https://github.com/rmnill202/" },
+      { "websiteName": "Twitter", "link": "https://twitter.com/rmnill202" },
+      { "websiteName": "LinkedIn", "link": "https://www.linkedin.com/in/robert-nill-096b64112/" },
+      { "websiteName": "Facebook", "link": "https://www.facebook.com/robert.m.nill" }
+    ],
+    "phone": "516-551-9679"
   },
   "headerLinks": {
     "left": [
