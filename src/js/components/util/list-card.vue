@@ -6,8 +6,8 @@
       <!-- Optional Image or Icon; prefer images -->
       <div class="imgcontainer">
         <img v-if="value.image" :src="getSrc(value.image)" class="optionalImage" :style="imgStyle"/>
-        <v-icon v-if="value.icon && value.image" class="iconWithImage">{{value.icon}}</v-icon>
-        <v-icon v-else-if="value.icon" class="optionalIcon">{{value.icon}}</v-icon>
+        <v-icon v-if="value.icon && value.image" class="iconWithImage" style="font-size: 53px">{{value.icon}}</v-icon>
+        <v-icon v-else-if="value.icon" class="optionalIcon" style="font-size: 53px">{{value.icon}}</v-icon>
       </div>
       
       
@@ -94,7 +94,7 @@
   }
   .optionalIcon {
     display: block;
-    font-size: 53px;
+    font-size: 53px;  /* Doesn't work when deployed with npm run build, has inline override */
   }
   .cardStyle {
     margin-left: auto;
@@ -108,7 +108,7 @@
   }
   .iconWithImage {
     display: block;
-    font-size: 53px;
+    font-size: 53px; /* Doesn't work when deployed with npm run build, has inline override */
     position: absolute;
     transform: translate(-50%, -106%);
   }
