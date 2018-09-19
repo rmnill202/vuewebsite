@@ -38,9 +38,21 @@
         <v-layout row wrap>
           <v-flex style="padding: 2px" v-for="item in value.gallery">
             <v-card flat>
-               <v-tooltip bottom>
-                <img :src="getSrc(item)" slot="activator" class="galleryImage" :style="galleryStyle"/>
-                <span>{{item.text}}</span> <!-- Tooltip text -->
+              <v-tooltip bottom>
+
+                <!-- If the image has a source, the image should link to it -->
+                <a v-if="item.source" :href="item.source" slot="activator">
+                  <img :src="getSrc(item)" slot="activator" class="galleryImage clickableImage" :style="galleryStyle"/>
+                </a>
+
+                <!-- Otherwise just display the image -->
+                <img v-else :src="getSrc(item)" slot="activator" class="galleryImage" :style="galleryStyle"/>
+
+                <span> <!-- Tooltip text -->
+                  {{item.text}}
+                  <div v-if="item.source" style="font-weight: bold">Click for source!</div>
+                </span> 
+
               </v-tooltip>
             </v-card>
           </v-flex>
@@ -118,5 +130,8 @@
     margin-right: auto;
     width: 100%;
     height: 100%;
+  }
+  .clickableImage:hover {
+    opacity: 0.5;
   }
 </style>
