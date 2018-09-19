@@ -102,16 +102,17 @@
 	  },
     {
       "preview": {
-        "name": "MyBoard PI",
-        "description": "Whiteboard app for RPIs",
-        "startDate": "03/18",
+        "name": "Supply Chain Visibility",
+        "description": "Mobile app that enables Wegmans employees to understand root causes of supply chain performance, starting with a single product.",
+        "startDate": "08/18",
         "endDate": "Now",
         "images": [
           {"name": "Image", "img": "projects/previews/vue-website-icon2.png"}
         ],
         "tags": [
-          {"text": "Personal Project", "icon": "fas fa-user-circle"},
-          {"text": "Hardware", "icon": "fas fa-hdd"}
+          {"text": "Capstone Project (SE)", "icon": "fas fa-graduation-cap"},
+          {"text": ".NET & Azure", "icon": "fab fa-microsoft"},
+          {"text": "Mobile App", "icon": "fas fa-mobile-alt"}
         ]
       }
 	  }
