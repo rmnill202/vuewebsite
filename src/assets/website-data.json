@@ -1,10 +1,13 @@
 {
   "welcomePage": {
-    "websiteName": "Robert Nill",
-    "description": "This website is a work-in-progress. Check out my GitHub!",
+    "websiteName": "Robert Nill - Software Engineer",
+    "description": "Howdy! Feel free to look at some of my projects, or look at my resume!",
     "recentEvents": [
+      {"description": "M.S. in Computer Science at RIT", "dateText": "est. May '20"},
       {"description": "B.S. in Software Engineering at RIT", "dateText": "est. May '19"},
+      {"description": "Teaching Assistant - Intro to Software Engineering", "dateText": "Aug - Dec '17 & Aug - Dec '18"},
       {"description": "Curriculum Associates Co-op", "dateText": "Jan - Jun '18"},
+      {"description": "Society of Software Engineers Mentor", "dateText": "Aug - Dec '17"},
       {"description": "Northrop Grumman Co-op", "dateText": "Jan - Aug '17"}
     ],
     "previewImages": {
