@@ -11,6 +11,9 @@
     <!-- Description -->
     <div class="description title">{{description}}</div>
 
+    <!-- Resume link -->
+    <div class="resume title"><a href="https://people.rit.edu/rmn6979/2018_Robert_Nill_Software_Engineer_Resume.pdf">Download my resume here <i class="fas fa-file-alt"></i></a></div>
+
     <!-- Recent events -->
     <div class="recentEvents" v-for="event in recentEvents" :key="event.id">
       <div class="eventLeft">{{event.description}}</div>
@@ -43,11 +46,11 @@
 </script>
 
 <style>
+  .resume {
+    margin: 10px 20% 30px 20%;
+  }
   .description {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin: 30px 20% 10px 20%;
   }
   .recentEvents {
     margin-left: 20%;

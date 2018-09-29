@@ -68,21 +68,6 @@
     },
     {
       "preview": {
-        "name": "Catalyst",
-        "description": "Dungeon crawler developed with Java & LibGDX.",
-        "startDate": "09/17",
-        "endDate": "Now",
-        "images": [
-          {"name": "Image", "img": "projects/previews/vue-website-icon2.png"}
-        ],
-        "tags": [
-          {"text": "Personal Project", "icon": "fas fa-user-circle"},
-          {"text": "Java", "icon": "fas fa-coffee"}
-        ]
-      }
-	  },
-    {
-      "preview": {
         "name": "Personal Vue Website",
         "description": "Portfolio and a spot for cool things",
         "startDate": "01/18",
