@@ -115,9 +115,9 @@
         "img": "gradient.png"
       },
       "gallery": [
-        {"img": "gradient.png", "text": "A"},
-        {"img": "gradient.png", "text": "B"},
-        {"img": "gradient.png", "text": "C"}
+        {"img": "gradient.png", "text": "This'll get filled in eventually!"},
+        {"img": "gradient.png", "text": "This'll get filled in eventually!"},
+        {"img": "gradient.png", "text": "This'll get filled in eventually!"}
       ]
     },
     {
@@ -129,9 +129,9 @@
         "img": "gradient.png"
       },
       "gallery": [
-        {"img": "gradient.png", "text": "A"},
-        {"img": "gradient.png", "text": "B"},
-        {"img": "gradient.png", "text": "C"}
+        {"img": "gradient.png", "text": "This'll get filled in eventually!"},
+        {"img": "gradient.png", "text": "This'll get filled in eventually!"},
+        {"img": "gradient.png", "text": "This'll get filled in eventually!"}
       ]
 	  },
     {
@@ -143,9 +143,9 @@
         "img": "gradient.png"
       },
       "gallery": [
-        {"img": "gradient.png", "text": "A"},
-        {"img": "gradient.png", "text": "B"},
-        {"img": "gradient.png", "text": "C"}
+        {"img": "gradient.png", "text": "This'll get filled in eventually!"},
+        {"img": "gradient.png", "text": "This'll get filled in eventually!"},
+        {"img": "gradient.png", "text": "This'll get filled in eventually!"}
       ]
 	  },
     {
@@ -157,9 +157,9 @@
         "img": "gradient.png"
       },
       "gallery": [
-        {"img": "gradient.png", "text": "A"},
-        {"img": "gradient.png", "text": "B"},
-        {"img": "gradient.png", "text": "C"}
+        {"img": "gradient.png", "text": "This'll get filled in eventually!"},
+        {"img": "gradient.png", "text": "This'll get filled in eventually!"},
+        {"img": "gradient.png", "text": "This'll get filled in eventually!"}
       ]
 	  },
     {
@@ -171,9 +171,9 @@
         "img": "gradient.png"
       },
       "gallery": [
-        {"img": "gradient.png", "text": "A"},
-        {"img": "gradient.png", "text": "B"},
-        {"img": "gradient.png", "text": "C"}
+        {"img": "gradient.png", "text": "This'll get filled in eventually!"},
+        {"img": "gradient.png", "text": "This'll get filled in eventually!"},
+        {"img": "gradient.png", "text": "This'll get filled in eventually!"}
       ]
 	  }
   ],
@@ -183,7 +183,7 @@
       "icon": "far fa-lightbulb",
       "bulletPoints": [
         {"text": "Essential skills for every step of the SDLC", "icon": "fas fa-arrow-alt-circle-right"},
-        {"text": "Domain-driven design/modeling and UML", "icon": "fas fa-arrow-alt-circle-right"},
+        {"text": "Domain-driven design/modeling, UML", "icon": "fas fa-arrow-alt-circle-right"},
         {"text": "UX lifecycle and related principles/tasks", "icon": "fas fa-arrow-alt-circle-right"}
       ]
     },
