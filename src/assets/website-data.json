@@ -24,7 +24,7 @@
         "startDate": "01/16",
         "endDate": "05/16",
         "images": [
-          {"name": "Image", "img": "projects/previews/vue-website-icon2.png"}
+          {"name": "Image", "img": "projects/previews/healthnet_preview.png"}
         ],
         "tags": [
           {"text": "Class Project", "icon": "fas fa-graduation-cap"},
@@ -35,11 +35,11 @@
     {
       "preview": {
         "name": "AFRS",
-        "description": "API for reserving flights and querying airport data.",
+        "description": "Mock text-API for reserving flights and querying airport data.",
         "startDate": "09/16",
         "endDate": "12/16",
         "images": [
-          {"name": "Image", "img": "projects/previews/vue-website-icon2.png"}
+          {"name": "Image", "img": "projects/previews/afrs_preview.png"}
         ],
         "tags": [
           {"text": "Class Project", "icon": "fas fa-graduation-cap"},
@@ -54,7 +54,7 @@
         "startDate": "09/17",
         "endDate": "12/17",
         "images": [
-          {"name": "Image", "img": "projects/previews/vue-website-icon2.png"}
+          {"name": "Image", "img": "projects/previews/pantreats_preview.png"}
         ],
         "links": [
           {"text": "GitHub", "url": "https://github.com/Sypherio/swen444-pantreats"}
@@ -73,7 +73,7 @@
         "startDate": "01/18",
         "endDate": "Now",
         "images": [
-          {"name": "Image", "img": "projects/previews/vue-website-icon2.png"}
+          {"name": "Image", "img": "projects/previews/website_preview_3.png"}
         ],
         "links": [
           {"text": "GitHub", "url": "https://github.com/rmnill202/vuewebsite"}
@@ -92,7 +92,10 @@
         "startDate": "08/18",
         "endDate": "Now",
         "images": [
-          {"name": "Image", "img": "projects/previews/vue-website-icon2.png"}
+          {"name": "Image", "img": "projects/previews/capstone_preview_2.png"}
+        ],
+        "links": [
+          {"text": "Website", "url": "http://www.se.rit.edu/~wegpeople/index.html"}
         ],
         "tags": [
           {"text": "Capstone Project (SE)", "icon": "fas fa-graduation-cap"},
@@ -179,27 +182,28 @@
       "name": "What I Know",
       "icon": "far fa-lightbulb",
       "bulletPoints": [
-        {"text": "Stuff", "icon": "fas fa-arrow-alt-circle-right"},
-        {"text": "Stuff", "icon": "fas fa-arrow-alt-circle-right"},
-        {"text": "Stuff", "icon": "fas fa-arrow-alt-circle-right"}
+        {"text": "Essential skills for every step of the SDLC", "icon": "fas fa-arrow-alt-circle-right"},
+        {"text": "Domain-driven design/modeling and UML", "icon": "fas fa-arrow-alt-circle-right"},
+        {"text": "UX lifecycle and related principles/tasks", "icon": "fas fa-arrow-alt-circle-right"}
       ]
     },
     {
-      "name": "Experienced In",
+      "name": "Have Experience With",
       "icon": "fas fa-book",
       "bulletPoints": [
-        {"text": "Stuff", "icon": "fas fa-arrow-alt-circle-right"},
-        {"text": "Stuff", "icon": "fas fa-arrow-alt-circle-right"},
-        {"text": "Stuff", "icon": "fas fa-arrow-alt-circle-right"}
+        {"text": "Java, Git, JavaScript, HTML/CSS, Vue", "icon": "fas fa-arrow-alt-circle-right"},
+        {"text": "C++, C, C#, Python", "icon": "fas fa-arrow-alt-circle-right"},
+        {"text": "OpenGL, LaTeX, YAML, PHP", "icon": "fas fa-arrow-alt-circle-right"},
+        {"text": "Cool libs: SFML, LibGDX", "icon": "fas fa-arrow-alt-circle-right"}
       ]
     },
     {
       "name": "Want To Know",
       "icon": "fas fa-exclamation",
       "bulletPoints": [
-        {"text": "Stuff", "icon": "fas fa-arrow-alt-circle-right"},
-        {"text": "Stuff", "icon": "fas fa-arrow-alt-circle-right"},
-        {"text": "Stuff", "icon": "fas fa-arrow-alt-circle-right"}
+        {"text": "Wider breadth of web dev skills (React!)", "icon": "fas fa-arrow-alt-circle-right"},
+        {"text": "More graphics APIs, such as Vulkan", "icon": "fas fa-arrow-alt-circle-right"},
+        {"text": "The \"ops\" side of DevOps", "icon": "fas fa-arrow-alt-circle-right"}
       ]
     }
   ],

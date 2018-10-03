@@ -8,7 +8,7 @@
       <v-layout row wrap>
 
         <v-flex v-for="item in skillsets">
-          <list-card :value="item" :img-width="'60px'" :gallery-width="'70px'" :width="'250px'"></list-card>
+          <list-card :value="item" :img-width="'60px'" :gallery-width="'70px'" :width="'350px'"></list-card>
         </v-flex>
 
       </v-layout>

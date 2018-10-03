@@ -10,7 +10,7 @@
 
       <!-- For larger screens, display all buttons -->
       <v-toolbar-items class="hidden-sm-and-down">
-        <v-btn v-for="link in rightLinks" :key="link.id" flat>{{link.text}}</v-btn>
+        <v-btn v-for="link in rightLinks" :href="link.address" :key="link.id" flat>{{link.text}}</v-btn>
       </v-toolbar-items>
 
       <!-- For smaller screens, display a menu -->

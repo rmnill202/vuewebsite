@@ -16,7 +16,7 @@
       
       <!-- Whatever project is selected, display a preview! -->
       <v-slide-x-reverse-transition mode="out-in">
-        <project-preview v-if="selected" :key="selected.key" :project="selected" :mediaHeight="'350px'" :width="'350px'"/>
+        <project-preview v-if="selected" :key="selected.key" :project="selected" :mediaHeight="'450px'" :width="'450px'"/>
       </v-slide-x-reverse-transition>
     </div>
 
@@ -130,7 +130,7 @@
   .larger {
     display: flex;
     justify-content: space-around;
-    grid-template-columns: 40% 20% 40%;
+    grid-template-columns: 40% 10% 40%;
   }
   .smaller {
     margin-left: 5%;

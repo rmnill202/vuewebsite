@@ -280,6 +280,11 @@
     -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
     display: inline-block;
+    transition: .5s ease;
+  }
+
+  .diamond:hover {
+    opacity: 0.1;
   }
 
   .allRows {
