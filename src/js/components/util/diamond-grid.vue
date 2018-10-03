@@ -177,6 +177,9 @@
       allClass() {
         return ['diamond'];
       },
+      hoverableClass() {
+        return ['hoverableDiamond'];
+      },
       allStyle() {
         return {'width': `${this.width}px`, 'height': `${this.height}px`, 
                 'marginLeft': `${this.margins}px`, 'marginRight': `${this.margins}px`,
@@ -186,7 +189,7 @@
       /** Styling for all elements **/
       /*****************************/
       elementClass() {
-        return this.allClass;
+        return this.selection >= -1 ? this.hoverableClass : this.allClass;
       },
       elementStyle() {
         return this.allStyle;
@@ -280,11 +283,18 @@
     -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
     display: inline-block;
-    transition: .5s ease;
+    transition: .25s ease;
   }
 
-  .diamond:hover {
-    opacity: 0.1;
+  .hoverableDiamond {
+    -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    display: inline-block;
+    transition: .25s ease;
+  }
+
+  .hoverableDiamond:hover {
+    filter: saturate(4) opacity(60%);
   }
 
   .allRows {
