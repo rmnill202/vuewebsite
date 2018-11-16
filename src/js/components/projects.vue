@@ -1,7 +1,7 @@
 <template>
   <div>
     <br> <!-- Section title -->
-    <h1>Projects</h1>
+    <h1 id="projects">Projects</h1>
     
     <!-- Container for the two columns displayed on larger screens -->
     <div class="hidden-sm-and-down larger"> 

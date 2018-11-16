@@ -1,7 +1,7 @@
 <template>
   <div>
     <br> <!-- Section title -->
-    <h1>Skillsets</h1>
+    <h1 id="skillsets">Skillsets</h1>
     
     <!-- Each skillset should have it's own card -->
     <v-container fluid grid-list-lg>

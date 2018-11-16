@@ -230,16 +230,16 @@
       }
     ],
     "right": [
-      { "address": "", "text": "Projects",
+      { "address": "#projects", "text": "Projects",
         "icon": { "name": "", "icon": ""}
       },
-      { "address": "", "text": "About",
+      { "address": "#about", "text": "About",
         "icon": { "name": "", "icon": ""}
       },
-      { "address": "", "text": "Skillsets",
+      { "address": "#skillsets", "text": "Skillsets",
         "icon": { "name": "", "icon": ""}
       },
-      { "address": "", "text": "Contact",
+      { "address": "#contact", "text": "Contact",
         "icon": { "name": "", "icon": ""}
       },
       { "address": "", "text": "Blog",
