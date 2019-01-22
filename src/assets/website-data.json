@@ -103,6 +103,27 @@
           {"text": "Mobile App", "icon": "fas fa-mobile-alt"}
         ]
       }
+	  },
+    {
+      "preview": {
+        "name": "Ray Tracer",
+        "description": "Originally a software-based ray tracer written in Java, this project now encompasses my graduate work for CSCI-711. Looking to implement hardware acceleration this time around!",
+        "startDate": "10/18",
+        "endDate": "Now",
+        "images": [
+          {"name": "Image", "img": "projects/previews/raytrace.png"}
+        ],
+        "links": [
+          {"text": "Website", "url": "https://rmnill202.github.io/711-raytracer"}
+        ],
+        "tags": [
+          {"text": "Personal Project", "icon": "fas fa-user-circle"},
+          {"text": "Class Project", "icon": "fas fa-graduation-cap"},
+          {"text": "Graphics Work", "icon": "fas fa-cubes"},
+          {"text": "Java", "icon": "fas fa-coffee"},
+          {"text": "OpenCL", "icon": "fas fa-th"}
+        ]
+      }
 	  }
   ],
   "about": [

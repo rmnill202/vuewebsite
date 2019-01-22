@@ -48,7 +48,7 @@
     components: {ProjectPreview, DiamondGrid},
     data() {
       return {
-        selectedIndex: 4 
+        selectedIndex: 5 
       };
     },
     computed: {
