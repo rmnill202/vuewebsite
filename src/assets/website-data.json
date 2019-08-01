@@ -3,12 +3,14 @@
     "websiteName": "Robert Nill - Software Engineer",
     "description": "Howdy! Feel free to look at some of my projects, or look at my resume!",
     "recentEvents": [
-      {"description": "M.S. in Computer Science at RIT", "dateText": "est. May '20"},
-      {"description": "B.S. in Software Engineering at RIT", "dateText": "est. May '19"},
-      {"description": "Teaching Assistant - Intro to Software Engineering", "dateText": "Aug - Dec '17 & Aug - Dec '18"},
-      {"description": "Curriculum Associates Co-op", "dateText": "Jan - Jun '18"},
+      {"description": "M.S. in Computer Science at RIT", "dateText": "May '20"},
+      {"description": "B.S. in Software Engineering at RIT", "dateText": "May '19"},
+      {"description": "Co-op Block @ RIT SITO", "dateText": "May - Aug '19"},
+      {"description": "Teaching Assistant - Intro to Software Engineering", "dateText": "Aug '18 - May '19"},
+      {"description": "Co-op Block @ Curriculum Associates", "dateText": "Jan - Jun '18"},
       {"description": "Society of Software Engineers Mentor", "dateText": "Aug - Dec '17"},
-      {"description": "Northrop Grumman Co-op", "dateText": "Jan - Aug '17"}
+      {"description": "Teaching Assistant - Intro to Software Engineering", "dateText": "Aug - Dec '17"},
+      {"description": "Double Co-op Block @ Northrop Grumman", "dateText": "Jan - Aug '17"}
     ],
     "previewImages": {
       "left": ["gradient.png", "gradient.png", "gradient.png", "gradient.png"],
@@ -68,8 +70,8 @@
     },
     {
       "preview": {
-        "name": "Personal Vue Website",
-        "description": "Portfolio and a spot for cool things",
+        "name": "This Website!",
+        "description": "Portfolio and a spot for cool things.",
         "startDate": "01/18",
         "endDate": "Now",
         "images": [
@@ -88,9 +90,9 @@
     {
       "preview": {
         "name": "Supply Chain Visibility",
-        "description": "Mobile app that enables Wegmans employees to understand root causes of supply chain performance, starting with a single product.",
+        "description": "Mobile app that helps Wegmans employees determine root causes of supply chain problems.",
         "startDate": "08/18",
-        "endDate": "Now",
+        "endDate": "06/19",
         "images": [
           {"name": "Image", "img": "projects/previews/capstone_preview_2.png"}
         ],
@@ -106,8 +108,8 @@
 	  },
     {
       "preview": {
-        "name": "Ray Tracer",
-        "description": "Originally a software-based ray tracer written in Java, this project now encompasses my graduate work for CSCI-711. Looking to implement hardware acceleration this time around!",
+        "name": "Java Ray Tracer",
+        "description": "Simple Java-based ray tracer",
         "startDate": "10/18",
         "endDate": "Now",
         "images": [
@@ -119,9 +121,25 @@
         "tags": [
           {"text": "Personal Project", "icon": "fas fa-user-circle"},
           {"text": "Class Project", "icon": "fas fa-graduation-cap"},
-          {"text": "Graphics Work", "icon": "fas fa-cubes"},
+          {"text": "Graphics Work", "icon": "fas fa-lightbulb"},
           {"text": "Java", "icon": "fas fa-coffee"},
           {"text": "OpenCL", "icon": "fas fa-th"}
+        ]
+      }
+	  },
+    {
+      "preview": {
+        "name": "Thesis Work",
+        "description": "Related to computer graphics and/or machine learning.",
+        "startDate": "06/19",
+        "endDate": "Now",
+        "images": [
+          {"name": "Image", "img": "projects/previews/thesis_placeholder.jpg"}
+        ],
+        "tags": [
+          {"text": "Graduate Work", "icon": "fas fa-graduation-cap"},
+          {"text": "Graphics Work", "icon": "fas fa-lightbulb"},
+          {"text": "Machine Learning", "icon": "fas fa-brain"}
         ]
       }
 	  }
@@ -134,68 +152,61 @@
       "image": {
         "name": "TO DO",
         "img": "gradient.png"
-      },
-      "gallery": [
-        {"img": "gradient.png", "text": "This'll get filled in eventually!"},
-        {"img": "gradient.png", "text": "This'll get filled in eventually!"},
-        {"img": "gradient.png", "text": "This'll get filled in eventually!"}
-      ]
+      }
     },
     {
       "name": "Music",
-      "description": "Stuff I listen to",
+      "description": "Super into alt/prog rock",
       "icon": "fas fa-headphones",
       "image": {
         "name": "TO DO",
         "img": "gradient.png"
-      },
-      "gallery": [
-        {"img": "gradient.png", "text": "This'll get filled in eventually!"},
-        {"img": "gradient.png", "text": "This'll get filled in eventually!"},
-        {"img": "gradient.png", "text": "This'll get filled in eventually!"}
-      ]
+      }
 	  },
     {
       "name": "Games",
-      "description": "Games I play",
+      "description": "Especially VR",
       "icon": "fas fa-gamepad",
       "image": {
         "name": "TO DO",
         "img": "gradient.png"
-      },
-      "gallery": [
-        {"img": "gradient.png", "text": "This'll get filled in eventually!"},
-        {"img": "gradient.png", "text": "This'll get filled in eventually!"},
-        {"img": "gradient.png", "text": "This'll get filled in eventually!"}
-      ]
+      }
 	  },
     {
       "name": "UX",
-      "description": "Cool experiences",
+      "description": "I love UI work",
       "icon": "fas fa-user",
       "image": {
         "name": "TO DO",
         "img": "gradient.png"
-      },
-      "gallery": [
-        {"img": "gradient.png", "text": "This'll get filled in eventually!"},
-        {"img": "gradient.png", "text": "This'll get filled in eventually!"},
-        {"img": "gradient.png", "text": "This'll get filled in eventually!"}
-      ]
+      }
 	  },
     {
       "name": "3D Printing",
-      "description": "Fun hobby",
+      "description": "Prusa i3 MK3",
       "icon": "fas fa-cubes",
       "image": {
         "name": "TO DO",
         "img": "gradient.png"
-      },
-      "gallery": [
-        {"img": "gradient.png", "text": "This'll get filled in eventually!"},
-        {"img": "gradient.png", "text": "This'll get filled in eventually!"},
-        {"img": "gradient.png", "text": "This'll get filled in eventually!"}
-      ]
+      }
+	  },
+    {
+      "name": "Computer Graphics",
+      "description": "Recent interest",
+      "icon": "fas fa-lightbulb",
+      "image": {
+        "name": "TO DO",
+        "img": "gradient.png"
+      }
+	  },
+    {
+      "name": "Machine Learning",
+      "description": "NST is the life for me",
+      "icon": "fas fa-brain",
+      "image": {
+        "name": "TO DO",
+        "img": "gradient.png"
+      }
 	  }
   ],
   "skillsets": [
@@ -203,7 +214,7 @@
       "name": "What I Know",
       "icon": "far fa-lightbulb",
       "bulletPoints": [
-        {"text": "Essential skills for every step of the SDLC", "icon": "fas fa-arrow-alt-circle-right"},
+        {"text": "Software development lifecycle", "icon": "fas fa-arrow-alt-circle-right"},
         {"text": "Domain-driven design/modeling, UML", "icon": "fas fa-arrow-alt-circle-right"},
         {"text": "UX lifecycle and related principles/tasks", "icon": "fas fa-arrow-alt-circle-right"}
       ]
@@ -212,9 +223,10 @@
       "name": "Have Experience With",
       "icon": "fas fa-book",
       "bulletPoints": [
-        {"text": "Java, Git, JavaScript, HTML/CSS, Vue", "icon": "fas fa-arrow-alt-circle-right"},
+        {"text": "Java, Git, JavaScript, HTML/CSS, Vue, Angular", "icon": "fas fa-arrow-alt-circle-right"},
         {"text": "C++, C, C#, Python", "icon": "fas fa-arrow-alt-circle-right"},
         {"text": "OpenGL, LaTeX, YAML, PHP", "icon": "fas fa-arrow-alt-circle-right"},
+        {"text": "Computer Graphics, Machine Learning", "icon": "fas fa-arrow-alt-circle-right"},
         {"text": "Cool libs: SFML, LibGDX", "icon": "fas fa-arrow-alt-circle-right"}
       ]
     },
@@ -222,9 +234,9 @@
       "name": "Want To Know",
       "icon": "fas fa-exclamation",
       "bulletPoints": [
-        {"text": "Wider breadth of web dev skills (React!)", "icon": "fas fa-arrow-alt-circle-right"},
-        {"text": "More graphics APIs, such as Vulkan", "icon": "fas fa-arrow-alt-circle-right"},
-        {"text": "The \"ops\" side of DevOps", "icon": "fas fa-arrow-alt-circle-right"}
+        {"text": "Wider breadth of web dev skills", "icon": "fas fa-arrow-alt-circle-right"},
+        {"text": "More graphics APIs", "icon": "fas fa-arrow-alt-circle-right"},
+        {"text": "More operational work", "icon": "fas fa-arrow-alt-circle-right"}
       ]
     }
   ],

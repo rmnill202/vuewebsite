@@ -1,7 +1,7 @@
 <template>
   <div>
     <br> <!-- Section title -->
-    <h1 id="about">About Me</h1>
+    <h1 id="about">Interests</h1>
     
     <!-- Each "About Me" section should be a card in the flex container -->
     <v-container fluid grid-list-lg>

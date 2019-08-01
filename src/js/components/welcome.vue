@@ -6,13 +6,13 @@
     <h1>{{title}}</h1>
 
     <!-- Image gallery -->
-    <welcome-gallery :left="left" :right="right" :center="center"></welcome-gallery>
+    <welcome-gallery :left="left" :right="right" :center="center" style="filter: drop-shadow(0px 3px 2px #000000)"></welcome-gallery>
 
     <!-- Description -->
     <div class="description title">{{description}}</div>
 
     <!-- Resume link -->
-    <div class="resume title"><a href="https://people.rit.edu/rmn6979/2018_Robert_Nill_Software_Engineer_Resume.pdf">Download my resume here <i class="fas fa-file-alt"></i></a></div>
+    <div class="resume title"><a href="https://people.rit.edu/rmn6979/2018_Robert_Nill_Software_Engineer_Resume.pdf">Download my resume here - <i class="fas fa-file-alt"></i></a></div>
 
     <!-- Recent events -->
     <div class="recentEvents" v-for="event in recentEvents" :key="event.id">

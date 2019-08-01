@@ -7,7 +7,7 @@
     <div class="hidden-sm-and-down larger"> 
 
       <!-- Display the projects in a flexbox -->
-      <div>
+      <div style="filter: drop-shadow(0px 3px 2px #000000)">
         <diamond-grid :elements="images" :pattern="[1,2]" 
             :selection="selectedIndex" @selected="updateSelected" 
             :width="120" :height="120" 
@@ -48,7 +48,7 @@
     components: {ProjectPreview, DiamondGrid},
     data() {
       return {
-        selectedIndex: 5 
+        selectedIndex: 6 
       };
     },
     computed: {
