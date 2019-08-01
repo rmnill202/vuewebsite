@@ -10,6 +10,22 @@ Vue.config.productionTip = false;
 Vue.use(Vuetify);
 import 'vuetify/dist/vuetify.min.css';
 
+// Scroll to import
+var VueScrollTo = require('vue-scrollto');
+Vue.use(VueScrollTo, {
+  container: "body",
+  duration: 600,
+  easing: "ease-out",
+  offset: 0,
+  force: true,
+  cancelable: true,
+  onStart: false,
+  onDone: false,
+  onCancel: false,
+  x: false,
+  y: true
+  });
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

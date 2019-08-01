@@ -10,7 +10,7 @@
 
       <!-- For larger screens, display all buttons -->
       <v-toolbar-items class="hidden-sm-and-down">
-        <v-btn v-for="link in rightLinks" :key="link.id" flat>{{link.text}}</v-btn>
+        <v-btn v-for="link in rightLinks" href="#" v-scroll-to="link.address" :key="link.id" flat>{{link.text}}</v-btn>
       </v-toolbar-items>
 
       <!-- For smaller screens, display a menu -->
@@ -20,7 +20,7 @@
         <!-- The menu contents -->
         <v-list>
           <!-- Buttons from the right side of the toolbar -->
-          <v-list-tile @click="" v-for="link in rightLinks" :key="link.id" :href="link.address">
+          <v-list-tile @click="" v-for="link in rightLinks" :key="link.id" href="#" v-scroll-to="link.address">
             <v-list-tile-title> {{link.text}} </v-list-tile-title>
           </v-list-tile>
           <!-- Links from the left side of the toolbar -->
@@ -35,9 +35,12 @@
 </template>
 
 <script>
+  import { ScrollTo } from 'vue-scrollto';
+
   export default {
     name: 'header-nav',
     props: ['headerLinks'],
+    directives: [ScrollTo],
     data() {
       return {
         leftLinks: this.headerLinks.left,

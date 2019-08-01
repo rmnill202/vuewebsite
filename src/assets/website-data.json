@@ -1,11 +1,16 @@
 {
   "welcomePage": {
-    "websiteName": "Robert Nill",
-    "description": "This website is a work-in-progress. Check out my GitHub!",
+    "websiteName": "Robert Nill - Software Engineer",
+    "description": "Howdy! Feel free to look at some of my projects, or look at my resume!",
     "recentEvents": [
-      {"description": "B.S. in Software Engineering at RIT", "dateText": "est. May '19"},
-      {"description": "Curriculum Associates Co-op", "dateText": "Jan - Jun '18"},
-      {"description": "Northrop Grumman Co-op", "dateText": "Jan - Aug '17"}
+      {"description": "M.S. in Computer Science at RIT", "dateText": "May '20"},
+      {"description": "B.S. in Software Engineering at RIT", "dateText": "May '19"},
+      {"description": "Co-op Block @ RIT SITO", "dateText": "May - Aug '19"},
+      {"description": "Teaching Assistant - Intro to Software Engineering", "dateText": "Aug '18 - May '19"},
+      {"description": "Co-op Block @ Curriculum Associates", "dateText": "Jan - Jun '18"},
+      {"description": "Society of Software Engineers Mentor", "dateText": "Aug - Dec '17"},
+      {"description": "Teaching Assistant - Intro to Software Engineering", "dateText": "Aug - Dec '17"},
+      {"description": "Double Co-op Block @ Northrop Grumman", "dateText": "Jan - Aug '17"}
     ],
     "previewImages": {
       "left": ["gradient.png", "gradient.png", "gradient.png", "gradient.png"],
@@ -21,7 +26,7 @@
         "startDate": "01/16",
         "endDate": "05/16",
         "images": [
-          {"name": "Image", "img": "projects/previews/vue-website-icon2.png"}
+          {"name": "Image", "img": "projects/previews/healthnet_preview.png"}
         ],
         "tags": [
           {"text": "Class Project", "icon": "fas fa-graduation-cap"},
@@ -32,11 +37,11 @@
     {
       "preview": {
         "name": "AFRS",
-        "description": "API for reserving flights and querying airport data.",
+        "description": "Mock text-API for reserving flights and querying airport data.",
         "startDate": "09/16",
         "endDate": "12/16",
         "images": [
-          {"name": "Image", "img": "projects/previews/vue-website-icon2.png"}
+          {"name": "Image", "img": "projects/previews/afrs_preview.png"}
         ],
         "tags": [
           {"text": "Class Project", "icon": "fas fa-graduation-cap"},
@@ -51,7 +56,7 @@
         "startDate": "09/17",
         "endDate": "12/17",
         "images": [
-          {"name": "Image", "img": "projects/previews/vue-website-icon2.png"}
+          {"name": "Image", "img": "projects/previews/pantreats_preview.png"}
         ],
         "links": [
           {"text": "GitHub", "url": "https://github.com/Sypherio/swen444-pantreats"}
@@ -65,27 +70,12 @@
     },
     {
       "preview": {
-        "name": "Catalyst",
-        "description": "Dungeon crawler developed with Java & LibGDX.",
-        "startDate": "09/17",
-        "endDate": "Now",
-        "images": [
-          {"name": "Image", "img": "projects/previews/vue-website-icon2.png"}
-        ],
-        "tags": [
-          {"text": "Personal Project", "icon": "fas fa-user-circle"},
-          {"text": "Java", "icon": "fas fa-coffee"}
-        ]
-      }
-	  },
-    {
-      "preview": {
-        "name": "Personal Vue Website",
-        "description": "Portfolio and a spot for cool things",
+        "name": "This Website!",
+        "description": "Portfolio and a spot for cool things.",
         "startDate": "01/18",
         "endDate": "Now",
         "images": [
-          {"name": "Image", "img": "projects/previews/vue-website-icon2.png"}
+          {"name": "Image", "img": "projects/previews/website_preview_3.png"}
         ],
         "links": [
           {"text": "GitHub", "url": "https://github.com/rmnill202/vuewebsite"}
@@ -99,16 +89,57 @@
 	  },
     {
       "preview": {
-        "name": "MyBoard PI",
-        "description": "Whiteboard app for RPIs",
-        "startDate": "03/18",
+        "name": "Supply Chain Visibility",
+        "description": "Mobile app that helps Wegmans employees determine root causes of supply chain problems.",
+        "startDate": "08/18",
+        "endDate": "06/19",
+        "images": [
+          {"name": "Image", "img": "projects/previews/capstone_preview_2.png"}
+        ],
+        "links": [
+          {"text": "Website", "url": "http://www.se.rit.edu/~wegpeople/index.html"}
+        ],
+        "tags": [
+          {"text": "Capstone Project (SE)", "icon": "fas fa-graduation-cap"},
+          {"text": ".NET & Azure", "icon": "fab fa-microsoft"},
+          {"text": "Mobile App", "icon": "fas fa-mobile-alt"}
+        ]
+      }
+	  },
+    {
+      "preview": {
+        "name": "Java Ray Tracer",
+        "description": "Simple Java-based ray tracer",
+        "startDate": "10/18",
         "endDate": "Now",
         "images": [
-          {"name": "Image", "img": "projects/previews/vue-website-icon2.png"}
+          {"name": "Image", "img": "projects/previews/raytrace.png"}
+        ],
+        "links": [
+          {"text": "Website", "url": "https://rmnill202.github.io/711-raytracer"}
         ],
         "tags": [
           {"text": "Personal Project", "icon": "fas fa-user-circle"},
-          {"text": "Hardware", "icon": "fas fa-hdd"}
+          {"text": "Class Project", "icon": "fas fa-graduation-cap"},
+          {"text": "Graphics Work", "icon": "fas fa-lightbulb"},
+          {"text": "Java", "icon": "fas fa-coffee"},
+          {"text": "OpenCL", "icon": "fas fa-th"}
+        ]
+      }
+	  },
+    {
+      "preview": {
+        "name": "Thesis Work",
+        "description": "Related to computer graphics and/or machine learning.",
+        "startDate": "06/19",
+        "endDate": "Now",
+        "images": [
+          {"name": "Image", "img": "projects/previews/thesis_placeholder.jpg"}
+        ],
+        "tags": [
+          {"text": "Graduate Work", "icon": "fas fa-graduation-cap"},
+          {"text": "Graphics Work", "icon": "fas fa-lightbulb"},
+          {"text": "Machine Learning", "icon": "fas fa-brain"}
         ]
       }
 	  }
@@ -121,68 +152,61 @@
       "image": {
         "name": "TO DO",
         "img": "gradient.png"
-      },
-      "gallery": [
-        {"img": "gradient.png", "text": "A"},
-        {"img": "gradient.png", "text": "B"},
-        {"img": "gradient.png", "text": "C"}
-      ]
+      }
     },
     {
       "name": "Music",
-      "description": "Stuff I listen to",
+      "description": "Super into alt/prog rock",
       "icon": "fas fa-headphones",
       "image": {
         "name": "TO DO",
         "img": "gradient.png"
-      },
-      "gallery": [
-        {"img": "gradient.png", "text": "A"},
-        {"img": "gradient.png", "text": "B"},
-        {"img": "gradient.png", "text": "C"}
-      ]
+      }
 	  },
     {
       "name": "Games",
-      "description": "Games I play",
+      "description": "Especially VR",
       "icon": "fas fa-gamepad",
       "image": {
         "name": "TO DO",
         "img": "gradient.png"
-      },
-      "gallery": [
-        {"img": "gradient.png", "text": "A"},
-        {"img": "gradient.png", "text": "B"},
-        {"img": "gradient.png", "text": "C"}
-      ]
+      }
 	  },
     {
       "name": "UX",
-      "description": "Cool experiences",
+      "description": "I love UI work",
       "icon": "fas fa-user",
       "image": {
         "name": "TO DO",
         "img": "gradient.png"
-      },
-      "gallery": [
-        {"img": "gradient.png", "text": "A"},
-        {"img": "gradient.png", "text": "B"},
-        {"img": "gradient.png", "text": "C"}
-      ]
+      }
 	  },
     {
       "name": "3D Printing",
-      "description": "Fun hobby",
+      "description": "Prusa i3 MK3",
       "icon": "fas fa-cubes",
       "image": {
         "name": "TO DO",
         "img": "gradient.png"
-      },
-      "gallery": [
-        {"img": "gradient.png", "text": "A"},
-        {"img": "gradient.png", "text": "B"},
-        {"img": "gradient.png", "text": "C"}
-      ]
+      }
+	  },
+    {
+      "name": "Computer Graphics",
+      "description": "Recent interest",
+      "icon": "fas fa-lightbulb",
+      "image": {
+        "name": "TO DO",
+        "img": "gradient.png"
+      }
+	  },
+    {
+      "name": "Machine Learning",
+      "description": "NST is the life for me",
+      "icon": "fas fa-brain",
+      "image": {
+        "name": "TO DO",
+        "img": "gradient.png"
+      }
 	  }
   ],
   "skillsets": [
@@ -190,27 +214,29 @@
       "name": "What I Know",
       "icon": "far fa-lightbulb",
       "bulletPoints": [
-        {"text": "Stuff", "icon": "fas fa-arrow-alt-circle-right"},
-        {"text": "Stuff", "icon": "fas fa-arrow-alt-circle-right"},
-        {"text": "Stuff", "icon": "fas fa-arrow-alt-circle-right"}
+        {"text": "Software development lifecycle", "icon": "fas fa-arrow-alt-circle-right"},
+        {"text": "Domain-driven design/modeling, UML", "icon": "fas fa-arrow-alt-circle-right"},
+        {"text": "UX lifecycle and related principles/tasks", "icon": "fas fa-arrow-alt-circle-right"}
       ]
     },
     {
-      "name": "Experienced In",
+      "name": "Have Experience With",
       "icon": "fas fa-book",
       "bulletPoints": [
-        {"text": "Stuff", "icon": "fas fa-arrow-alt-circle-right"},
-        {"text": "Stuff", "icon": "fas fa-arrow-alt-circle-right"},
-        {"text": "Stuff", "icon": "fas fa-arrow-alt-circle-right"}
+        {"text": "Java, Git, JavaScript, HTML/CSS, Vue, Angular", "icon": "fas fa-arrow-alt-circle-right"},
+        {"text": "C++, C, C#, Python", "icon": "fas fa-arrow-alt-circle-right"},
+        {"text": "OpenGL, LaTeX, YAML, PHP", "icon": "fas fa-arrow-alt-circle-right"},
+        {"text": "Computer Graphics, Machine Learning", "icon": "fas fa-arrow-alt-circle-right"},
+        {"text": "Cool libs: SFML, LibGDX", "icon": "fas fa-arrow-alt-circle-right"}
       ]
     },
     {
       "name": "Want To Know",
       "icon": "fas fa-exclamation",
       "bulletPoints": [
-        {"text": "Stuff", "icon": "fas fa-arrow-alt-circle-right"},
-        {"text": "Stuff", "icon": "fas fa-arrow-alt-circle-right"},
-        {"text": "Stuff", "icon": "fas fa-arrow-alt-circle-right"}
+        {"text": "Wider breadth of web dev skills", "icon": "fas fa-arrow-alt-circle-right"},
+        {"text": "More graphics APIs", "icon": "fas fa-arrow-alt-circle-right"},
+        {"text": "More operational work", "icon": "fas fa-arrow-alt-circle-right"}
       ]
     }
   ],
@@ -237,16 +263,16 @@
       }
     ],
     "right": [
-      { "address": "", "text": "Projects",
+      { "address": "#projects", "text": "Projects",
         "icon": { "name": "", "icon": ""}
       },
-      { "address": "", "text": "About",
+      { "address": "#about", "text": "About",
         "icon": { "name": "", "icon": ""}
       },
-      { "address": "", "text": "Skillsets",
+      { "address": "#skillsets", "text": "Skillsets",
         "icon": { "name": "", "icon": ""}
       },
-      { "address": "", "text": "Contact",
+      { "address": "#contact", "text": "Contact",
         "icon": { "name": "", "icon": ""}
       },
       { "address": "", "text": "Blog",

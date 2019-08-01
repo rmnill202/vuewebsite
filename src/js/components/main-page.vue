@@ -27,8 +27,8 @@
       };
     },
     mounted() {
-      console.log("Hello world!");
-      console.log(this.websiteData);
+      // console.log("Hello world!");
+      // console.log(this.websiteData);
     },
     components: {
       HeaderNav,

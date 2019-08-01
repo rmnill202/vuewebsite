@@ -1,7 +1,7 @@
 <template>
   <div>
     <br> <!-- Section title -->
-    <h1>Contact</h1>
+    <h1 id="contact">Contact</h1>
 
     <!-- Primary container -->
     <div class="primaryContainer">

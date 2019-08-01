@@ -1,13 +1,13 @@
 <template>
   <div>
     <br> <!-- Section title -->
-    <h1>Projects</h1>
+    <h1 id="projects">Projects</h1>
     
     <!-- Container for the two columns displayed on larger screens -->
     <div class="hidden-sm-and-down larger"> 
 
       <!-- Display the projects in a flexbox -->
-      <div>
+      <div style="filter: drop-shadow(0px 3px 2px #000000)">
         <diamond-grid :elements="images" :pattern="[1,2]" 
             :selection="selectedIndex" @selected="updateSelected" 
             :width="120" :height="120" 
@@ -16,7 +16,7 @@
       
       <!-- Whatever project is selected, display a preview! -->
       <v-slide-x-reverse-transition mode="out-in">
-        <project-preview v-if="selected" :key="selected.key" :project="selected" :mediaHeight="'350px'" :width="'350px'"/>
+        <project-preview v-if="selected" :key="selected.key" :project="selected" :mediaHeight="'450px'" :width="'450px'"/>
       </v-slide-x-reverse-transition>
     </div>
 
@@ -48,7 +48,7 @@
     components: {ProjectPreview, DiamondGrid},
     data() {
       return {
-        selectedIndex: 4 
+        selectedIndex: 6 
       };
     },
     computed: {
@@ -130,7 +130,7 @@
   .larger {
     display: flex;
     justify-content: space-around;
-    grid-template-columns: 40% 20% 40%;
+    grid-template-columns: 40% 10% 40%;
   }
   .smaller {
     margin-left: 5%;
