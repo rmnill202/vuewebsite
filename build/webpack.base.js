@@ -13,9 +13,10 @@ const webpackConfig = {
   entry: './src/js/main.js',
   output: {
     path: config.assetsRoot,
-    publicPath: config.assetsPublicPath,
+    // publicPath: config.assetsPublicPath,
     filename: config.isDev ? './js/[name].js' : './js/[name].[chunkhash].js',
     chunkFilename: config.isDev ? './js/[id].js' : './js/chunk.[chunkhash].js',
+    publicPath: `/vuewebsite/`,
   },
   resolve: {
     extensions: ['.js', '.vue', '.json'],
